@@ -4,6 +4,18 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+    <filter>
+        <filter-name>MyAttributeFilter</filter-name>
+        <filter-class>ru.tsystems.tsproject.sbb.MyAttributeFilter</filter-class>
+        <init-param>
+            <param-name>test-param</param-name>
+            <param-value>This parameter is for testing.</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyAttributeFilter</filter-name>
+        <url-pattern>/Servlet</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>Servlet</servlet-name>
         <servlet-class>ru.tsystems.tsproject.sbb.Servlet</servlet-class>

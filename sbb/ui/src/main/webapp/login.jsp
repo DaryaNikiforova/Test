@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 
-<t:maintemplate>
+<t:mainTemplate>
     <jsp:attribute name="header">
         <h1>Регистрация</h1>
     </jsp:attribute>
@@ -23,4 +23,4 @@
             <input type = "SUBMIT">
         </form>
     </jsp:body>
-</t:maintemplate>
+</t:mainTemplate>

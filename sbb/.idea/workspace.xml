@@ -5,82 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5004a839-5de1-4069-bd20-c53ecb4a165c" name="Default" comment="DAO, Hibernate and DB">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddStationServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AdminFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AuthFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/BuyTicketServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/FactoryDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LoginServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LogoutServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Rate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/RegisterServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Role.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Route.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/RouteEntry.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/RouteEntryDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Service.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Station.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/StationDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/StationDAOImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Ticket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TicketDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TimetableService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Train.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TrainDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Trip.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/UserDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/addStation.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/buyTicket.jsp" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/Library/Preferences/IntelliJIdea13/options/images.support.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/tags/mainTemplate.tag" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/registration.jsp" />
       <change type="NEW" beforePath="" afterPath="$USER_HOME$/web/testApp/web/web.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/ui_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/ui_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/MySQLStationDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/MySQLTimetableDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/StationDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/TicketDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/TimetableDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/TrainDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/UserDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Entity/Role.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Entity/Station.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Entity/Ticket.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Entity/TimetableRecord.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Entity/Train.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Entity/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Factory/DAOFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Main.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/model.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/pom.xml" afterPath="$PROJECT_DIR$/core/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/MySQLTicketDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TicketDAOImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/MySQLTrainDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TrainDAOImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/DAO/MySQLUserDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/UserDAOImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/main/java/ru/tsystems/tsproject/sbb/Factory/MySQLFactory.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/FactoryDAOImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/core/src/main/resources/META-INF/persistence.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/test/java/ru/tsystems/tsproject/sbb/AppTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/AppTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/Servlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/tsystem_practice/Servlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/pom.xml" afterPath="$PROJECT_DIR$/ui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/ui.iml" afterPath="$PROJECT_DIR$/ui/ui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sbb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -393,15 +320,15 @@
               <option name="myItemId" value="sbb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="sbb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -433,13 +360,13 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ru.tsystems.tsproject.sbb" />
-      <recent name="ru.tsystems.tsproject.sbb.database.dao" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ui/src/main/webapp" />
       <recent name="$PROJECT_DIR$/model/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ru.tsystems.tsproject.sbb" />
+      <recent name="ru.tsystems.tsproject.sbb.database.dao" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
@@ -904,7 +831,7 @@
       <workItem from="1413306039049" duration="2783000" />
       <workItem from="1413313255041" duration="13257000" />
       <workItem from="1413375139755" duration="20449000" />
-      <workItem from="1413413207372" duration="311000" />
+      <workItem from="1413413207372" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="DAO, Hibernate and DB">
       <created>1412896727759</created>
@@ -914,11 +841,19 @@
       <created>1412897047251</created>
       <updated>1412897047251</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#2 DAO, Hibernate and DB, User Session, Servlets and JSP">
+      <created>1413413565087</created>
+      <updated>1413413565087</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gitignore">
+      <created>1413413873325</created>
+      <updated>1413413873325</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188653000" />
+    <option name="totallyTimeSpent" value="189054000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -990,11 +925,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
     <MESSAGE value="DAO, Hibernate and DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAO, Hibernate and DB" />
+    <MESSAGE value="#2 DAO, Hibernate and DB, User Session, Servlets and JSP" />
+    <MESSAGE value="gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,41 +1014,41 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1203" max-vertical-offset="1800">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1175#1176#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-            <element signature="e#1319#1320#0" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1388#1389#0" expanded="true" />
-            <element signature="e#1419#1420#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1577#1578#0" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-            <element signature="e#1667#1668#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2178#2179#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#601#602#0" expanded="false" />
+            <element signature="e#639#640#0" expanded="false" />
+            <element signature="e#671#672#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
+            <element signature="e#722#723#0" expanded="false" />
+            <element signature="e#755#756#0" expanded="false" />
+            <element signature="e#783#784#0" expanded="false" />
+            <element signature="e#814#815#0" expanded="false" />
+            <element signature="e#841#842#0" expanded="false" />
+            <element signature="e#881#882#0" expanded="false" />
+            <element signature="e#913#914#0" expanded="false" />
+            <element signature="e#947#948#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
+            <element signature="e#1023#1024#0" expanded="false" />
+            <element signature="e#1061#1062#0" expanded="false" />
+            <element signature="e#1095#1096#0" expanded="false" />
+            <element signature="e#1127#1128#0" expanded="false" />
+            <element signature="e#1175#1176#0" expanded="false" />
+            <element signature="e#1217#1218#0" expanded="false" />
+            <element signature="e#1249#1250#0" expanded="false" />
+            <element signature="e#1277#1278#0" expanded="false" />
+            <element signature="e#1319#1320#0" expanded="false" />
+            <element signature="e#1353#1354#0" expanded="false" />
+            <element signature="e#1388#1389#0" expanded="false" />
+            <element signature="e#1419#1420#0" expanded="false" />
+            <element signature="e#1467#1468#0" expanded="false" />
+            <element signature="e#1507#1508#0" expanded="false" />
+            <element signature="e#1547#1548#0" expanded="false" />
+            <element signature="e#1577#1578#0" expanded="false" />
+            <element signature="e#1629#1630#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#2134#2135#0" expanded="false" />
+            <element signature="e#2178#2179#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1119,8 +1058,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="480">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#531#532#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1152,14 +1091,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="600">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="false" />
+            <element signature="e#289#290#0" expanded="false" />
+            <element signature="e#329#330#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
+            <element signature="e#412#413#0" expanded="false" />
+            <element signature="e#445#446#0" expanded="false" />
+            <element signature="e#473#474#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1290,7 +1229,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="510">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1308,7 +1247,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="405">
           <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1318,7 +1257,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="960">
           <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1328,10 +1267,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="31" max-vertical-offset="510">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="false" />
+            <element signature="e#250#251#0" expanded="false" />
+            <element signature="e#483#484#0" expanded="false" />
+            <element signature="e#525#526#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1341,7 +1280,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1035">
           <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1359,7 +1298,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="510">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>

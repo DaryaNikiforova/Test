@@ -10,6 +10,22 @@ import javax.persistence.Id;
  */
 @Entity
 public class Rate {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
@@ -19,4 +35,8 @@ public class Rate {
     private int value;
 
     public Rate() {}
+
+    public Rate(int id) {
+        this.id = id;
+    }
 }

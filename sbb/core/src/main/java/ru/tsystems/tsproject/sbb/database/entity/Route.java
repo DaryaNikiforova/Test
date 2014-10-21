@@ -9,8 +9,40 @@ import java.util.List;
  */
 @Entity
 public class Route {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Trip> getTrips() {
+        return trips;
+    }
+
+    public void setTrips(List<Trip> trips) {
+        this.trips = trips;
+    }
+
+    public List<RouteEntry> getRouteEntries() {
+        return routeEntries;
+    }
+
+    public void setRouteEntries(List<RouteEntry> routeEntries) {
+        this.routeEntries = routeEntries;
+    }
+
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String name;
@@ -23,6 +55,6 @@ public class Route {
     @OneToMany(mappedBy = "route")
     List<Trip> trips;
 
-    @OneToMany(mappedBy = "route")
+    @OneToMany(mappedBy = "route", cascade = {CascadeType.PERSIST})
     List<RouteEntry> routeEntries;
 }

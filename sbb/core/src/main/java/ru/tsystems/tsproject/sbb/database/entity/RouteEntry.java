@@ -1,7 +1,6 @@
 package ru.tsystems.tsproject.sbb.database.entity;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 
 /**
  * Created by apple on 14.10.14.
@@ -12,11 +11,61 @@ public class RouteEntry {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
 
-    private Timestamp time;
+    public int getHour() {
+        return hour;
+    }
+
+    public void setHour(int hour) {
+        this.hour = hour;
+    }
+
+    public int getMinute() {
+        return minute;
+    }
+
+    public void setMinute(int minute) {
+        this.minute = minute;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
+    public int getSeqNumber() {
+        return seqNumber;
+    }
+
+    public void setSeqNumber(int seqNumber) {
+        this.seqNumber = seqNumber;
+    }
+
+    public Station getStation() {
+        return station;
+    }
+
+    public void setStation(Station station) {
+        this.station = station;
+    }
+
+    public Route getRoute() {
+        return route;
+    }
+
+    public void setRoute(Route route) {
+        this.route = route;
+    }
 
     private int distance;
 
     private int seqNumber;
+
+    private int hour;
+
+    private int minute;
 
     @ManyToOne
     private Station station;

@@ -1,6 +1,7 @@
 package ru.tsystems.tsproject.sbb.database.dao.impl;
 
 import ru.tsystems.tsproject.sbb.database.dao.TrainDAO;
+import ru.tsystems.tsproject.sbb.database.entity.Rate;
 import ru.tsystems.tsproject.sbb.database.entity.Train;
 
 import javax.persistence.EntityManager;
@@ -17,8 +18,8 @@ public final class TrainDAOImpl implements TrainDAO {
     }
 
     @Override
-    public void addTrain(int number, int seatsCount) {
-        Train train = new Train(number, seatsCount);
+    public void addTrain(int number, int seatsCount, String name, Rate rate) {
+        Train train = new Train(number, seatsCount, name, rate);
         try {
             entityManager.getTransaction().begin();
             entityManager.persist(train);
@@ -60,6 +61,11 @@ public final class TrainDAOImpl implements TrainDAO {
                      .setParameter("train", train)
                      .setParameter("number", train.getId())
                      .executeUpdate();
+    }
+
+    @Override
+    public List<Train> getTrains() {
+        return entityManager.createQuery("select t from Train t").getResultList();
     }
 
 }

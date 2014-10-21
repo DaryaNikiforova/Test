@@ -8,4 +8,8 @@ public interface FactoryDAO {
     TrainDAO getTrainDAO();
     TicketDAO getTicketDAO();
     StationDAO getStationDAO();
+    RouteEntryDAO getRouteEntryDAO();
+    TripDAO getTripDAO();
+    RouteDAO getRouteDAO();
 }
+

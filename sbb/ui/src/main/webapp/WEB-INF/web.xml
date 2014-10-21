@@ -4,6 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
     <filter>
         <filter-name>MyAttributeFilter</filter-name>
         <filter-class>ru.tsystems.tsproject.sbb.tsystem_practice.MyAttributeFilter</filter-class>
@@ -36,6 +37,7 @@
         <filter-name>MyAttributeFilter</filter-name>
         <url-pattern>/Servlet</url-pattern>
     </filter-mapping>
+
     <servlet>
         <servlet-name>Servlet</servlet-name>
         <servlet-class>ru.tsystems.tsproject.sbb.tsystem_practice.Servlet</servlet-class>
@@ -64,6 +66,62 @@
         <servlet-name>BuyTicketServlet</servlet-name>
         <servlet-class>ru.tsystems.tsproject.sbb.BuyTicketServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetStationsServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.secure.GetStationsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetStationsServlet</servlet-name>
+        <url-pattern>/secure/getStations</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetTrainsServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.secure.GetTrainsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetTrainsServlet</servlet-name>
+        <url-pattern>/secure/getTrains</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddTrainServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.secure.AddTrainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddTrainServlet</servlet-name>
+        <url-pattern>/secure/addTrain</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetRoutesServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.secure.GetRoutesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetRoutesServlet</servlet-name>
+        <url-pattern>/secure/getRoutes</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddRouteServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.secure.AddRouteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddRouteServlet</servlet-name>
+        <url-pattern>/secure/addRoute</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetTripsServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.secure.GetTripsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetTripsServlet</servlet-name>
+        <url-pattern>/secure/getTrips</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SearchTripServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.SearchTripServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchTripServlet</servlet-name>
+        <url-pattern>/searchTrip</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>BuyTicketServlet</servlet-name>
         <url-pattern>/buy</url-pattern>

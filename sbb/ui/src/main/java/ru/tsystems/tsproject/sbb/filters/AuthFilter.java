@@ -17,10 +17,10 @@ public class AuthFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
         HttpSession session = request.getSession(false);
-        if (session.getAttribute("login")!=null) {
+        if (session.getAttribute("login") != null) {
+            resp.setCharacterEncoding("UTF-8");
             chain.doFilter(req, resp);
-        }
-        else {
+        } else {
             response.sendRedirect("login.jsp");
         }
     }

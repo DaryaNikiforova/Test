@@ -49,4 +49,19 @@ public class FactoryDAOImpl implements FactoryDAO {
         return new StationDAOImpl(em);
     }
 
+    @Override
+    public RouteEntryDAO getRouteEntryDAO() {
+        return new RouteEntryDAOImpl(em);
+    }
+
+    @Override
+    public TripDAO getTripDAO() {
+        return new TripDAOImpl(em);
+    }
+
+    @Override
+    public RouteDAO getRouteDAO() {
+        return new RouteDAOImpl(em);
+    }
+
 }

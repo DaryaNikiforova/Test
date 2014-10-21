@@ -40,7 +40,7 @@ public class Main {
                     em.getTransaction().rollback();
             }
 
-            FactoryDAOImpl factory = new FactoryDAOImpl();
+           FactoryDAOImpl factory = new FactoryDAOImpl();
             try {
                 StationDAO stationDAO = factory.getStationDAO();
                 stationDAO.addStation("Udelnaya");

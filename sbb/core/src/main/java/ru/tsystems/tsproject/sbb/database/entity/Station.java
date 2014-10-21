@@ -9,6 +9,30 @@ import java.util.List;
  */
 @Entity
 public class Station {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<RouteEntry> getRouteEntries() {
+        return routeEntries;
+    }
+
+    public void setRouteEntries(List<RouteEntry> routeEntries) {
+        this.routeEntries = routeEntries;
+    }
+
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;

@@ -1,9 +1,7 @@
 package ru.tsystems.tsproject.sbb.database.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by apple on 14.10.14.
@@ -14,9 +12,28 @@ public class Service {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String name;
 
-    private int value;
+    private double value;
 
     public Service() {}
+
+    @ManyToMany(mappedBy="services")
+    private List<Ticket> tickets;
 }

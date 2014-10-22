@@ -39,11 +39,6 @@ public class FactoryDAOImpl implements FactoryDAO {
         return new TicketDAOImpl(em);
     }
 
-    //@Override
-    //public TimetableDAO getTimetableDAO() {
-      //  return new TimetableDAOImpl(em);
-    //}
-
     @Override
     public StationDAO getStationDAO() {
         return new StationDAOImpl(em);
@@ -63,5 +58,16 @@ public class FactoryDAOImpl implements FactoryDAO {
     public RouteDAO getRouteDAO() {
         return new RouteDAOImpl(em);
     }
+
+    @Override
+    public RateDAO getRateDAO() {
+        return new RateDAOImpl(em);
+    }
+
+    @Override
+    public ServiceDAO getServiceDAO() {
+        return new ServiceDAOImpl(em);
+    }
+
 
 }

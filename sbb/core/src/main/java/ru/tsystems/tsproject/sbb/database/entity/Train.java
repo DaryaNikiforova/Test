@@ -51,6 +51,8 @@ public class Train {
 
     private String name;
 
+
+
     @OneToOne
     private Rate rate;
 
@@ -67,6 +69,7 @@ public class Train {
         this.name = name;
         this.rate = rate;
     }
+
 
     public Rate getRate() {
         return rate;

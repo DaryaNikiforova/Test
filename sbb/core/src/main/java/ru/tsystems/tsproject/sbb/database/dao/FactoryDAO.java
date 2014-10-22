@@ -11,5 +11,7 @@ public interface FactoryDAO {
     RouteEntryDAO getRouteEntryDAO();
     TripDAO getTripDAO();
     RouteDAO getRouteDAO();
+    RateDAO getRateDAO();
+    ServiceDAO getServiceDAO();
 }
 

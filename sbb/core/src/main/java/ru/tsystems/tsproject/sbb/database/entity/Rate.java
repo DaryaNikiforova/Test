@@ -32,7 +32,17 @@ public class Rate {
 
     private String name;
 
-    private int value;
+    private double value;
+
+    private boolean forTrain;
+
+    public boolean isForTrain() {
+        return forTrain;
+    }
+
+    public void setForTrain(boolean forTrain) {
+        this.forTrain = forTrain;
+    }
 
     public Rate() {}
 

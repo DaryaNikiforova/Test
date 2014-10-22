@@ -28,6 +28,7 @@
             <td>${entry.getStationTo()}</td>
             <td>${entry.getDepDate()}</td>
             <td>${entry.getArriveDate()}</td>
+            <td><a href="buyTicket?tripId=${entry.getTripId()}&stationFrom=${entry.getStationFrom()}&stationTo=${entry.getStationTo()}">купить билет</a>
         </tr>
     </c:forEach>
     </table>

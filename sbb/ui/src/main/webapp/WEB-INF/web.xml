@@ -27,7 +27,7 @@
     </filter-mapping>
     <filter-mapping>
         <filter-name>AuthFilter</filter-name>
-        <url-pattern>/buy</url-pattern>
+        <url-pattern>/buyTicket</url-pattern>
     </filter-mapping>
     <filter-mapping>
         <filter-name>AuthFilter</filter-name>
@@ -118,13 +118,29 @@
         <servlet-name>SearchTripServlet</servlet-name>
         <servlet-class>ru.tsystems.tsproject.sbb.SearchTripServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SearchStationTripServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.SearchStationTripServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PurchaseServlet</servlet-name>
+        <servlet-class>ru.tsystems.tsproject.sbb.PurchaseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PurchaseServlet</servlet-name>
+        <url-pattern>/purchasesummary</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchStationTripServlet</servlet-name>
+        <url-pattern>/searchStationTrips</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SearchTripServlet</servlet-name>
         <url-pattern>/searchTrip</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>BuyTicketServlet</servlet-name>
-        <url-pattern>/buy</url-pattern>
+        <url-pattern>/buyTicket</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>

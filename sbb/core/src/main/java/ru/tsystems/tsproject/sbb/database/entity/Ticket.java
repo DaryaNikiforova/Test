@@ -2,6 +2,7 @@ package ru.tsystems.tsproject.sbb.database.entity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by apple on 14.10.14.
@@ -93,6 +94,13 @@ public class Ticket {
 
     @ManyToOne
     private Trip trip;
+
+    @OneToOne
+    private Rate rate;
+
+    @ManyToMany(cascade = {CascadeType.ALL})
+    @JoinTable(name = "ticket_service")
+    private List<Service> services;
 
     public Ticket() {}
 }

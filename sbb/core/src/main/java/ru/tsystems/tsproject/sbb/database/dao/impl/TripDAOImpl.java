@@ -27,9 +27,10 @@ public final class TripDAOImpl implements TripDAO {
                              .getResultList();
     }
 
-    public List<Trip> getTripsByRoute(int routeId) {
+    public List<Trip> getTripsByRoute(int routeId, Date depDate) {
         return entityManager.createNamedQuery("Trip.getTripsByRoute", Trip.class)
-                            .setParameter("id", routeId).getResultList();
+                            .setParameter("id", routeId)
+                            .setParameter("date", depDate).getResultList();
     }
 
     @Override

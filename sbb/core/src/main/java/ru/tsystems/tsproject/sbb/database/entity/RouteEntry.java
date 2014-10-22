@@ -27,11 +27,11 @@ public class RouteEntry {
         this.minute = minute;
     }
 
-    public int getDistance() {
+    public double getDistance() {
         return distance;
     }
 
-    public void setDistance(int distance) {
+    public void setDistance(double distance) {
         this.distance = distance;
     }
 
@@ -59,7 +59,7 @@ public class RouteEntry {
         this.route = route;
     }
 
-    private int distance;
+    private double distance;
 
     private int seqNumber;
 

@@ -23,7 +23,7 @@ public class RouteHelper {
             }
         });
 
-        return Integer.toString(list.get(list.size() - 1).getDistance());
+        return Double.toString(list.get(list.size() - 1).getDistance());
     }
 
     public static String getRouteTime(Route route) {

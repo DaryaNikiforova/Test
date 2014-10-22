@@ -9,7 +9,8 @@ import java.util.List;
  * Created by apple on 14.10.14.
  */
 @Entity
-@NamedQuery(name="Trip.getTripsByRoute", query="select t from Trip t where t.route.id = :id")
+@NamedQuery(name="Trip.getTripsByRoute", query="select t from Trip t where t.route.id = :id and day(t.departureTime) = day(:date) " +
+                                               "and month(t.departureTime) = month(:date) and year(t.departureTime) = year(:date)")
 public class Trip {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)

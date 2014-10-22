@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface TripDAO {
     List<Trip> getTripsByInterval(int route_id, Date timeFrom, Date timeTo);
-    List<Trip> getTripsByRoute(int routeId);
+    List<Trip> getTripsByRoute(int routeId, Date depDate);
     Trip getTrip (int tripId);
     List<Trip> getAllTrips();
 }

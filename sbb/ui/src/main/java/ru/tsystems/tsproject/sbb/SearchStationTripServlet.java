@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -22,17 +23,21 @@ public class SearchStationTripServlet extends HttpServlet {
         List<TimetableTO> timetableList = new ArrayList<TimetableTO>();
 
         try {
-            timetableList = timetableService.getRoutesByStation(request.getParameter("stationFrom"),
-                    new SimpleDateFormat("dd.MM.yyyy hh:mm").parse(request.getParameter("departureDate")));
+            String stationFrom = request.getParameter("stationFrom");
+            Date departureDate = new SimpleDateFormat("dd.MM.yyyy").parse(request.getParameter("departureDate"));
+            timetableList = timetableService.getRoutesByStation(stationFrom, departureDate);
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
+        request.setAttribute("stations", timetableService.getStations());
         request.getSession().setAttribute("stationTimetable",timetableList);
         request.getRequestDispatcher("searchstationtrip.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        TimetableService timetableService = new TimetableService();
+        request.setAttribute("stations", timetableService.getStations());
         request.getRequestDispatcher("searchstationtrip.jsp").forward(request, response);
     }
 }

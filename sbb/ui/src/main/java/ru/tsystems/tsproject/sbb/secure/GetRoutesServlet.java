@@ -19,6 +19,6 @@ public class GetRoutesServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         TimetableService timetableService = new TimetableService();
         request.getSession().setAttribute("routes", timetableService.getAllRoutes());
-        request.getRequestDispatcher("routeList.jsp").forward(request, response);
+        request.getRequestDispatcher("getRoutes.jsp").forward(request, response);
     }
 }

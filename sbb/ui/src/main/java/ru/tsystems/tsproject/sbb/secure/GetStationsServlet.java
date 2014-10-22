@@ -19,6 +19,6 @@ public class GetStationsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         TimetableService timetableService = new TimetableService();
         request.getSession().setAttribute("stations", timetableService.getStations());
-        request.getRequestDispatcher("stations.jsp").forward(request, response);
+        request.getRequestDispatcher("getStations.jsp").forward(request, response);
     }
 }

@@ -5,20 +5,22 @@
   Time: 16:16
   To change this template use File | Settings | File Templates.
 --%>
-<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<t:mainTemplate>
-    <jsp:attribute name="header">
-        <h1>Новая станция</h1>
-    </jsp:attribute>
-    <jsp:attribute name="footer">
-        <p>Ticket service by T-systems Java school student</p>
-    </jsp:attribute>
+<t:adminTemplate menuBlock="station" menuRow="add" pageHeader="Новая станция">
     <jsp:body>
-        <form action = "addStation" method="post">
-            <input type="text" name = "name" placeholder="Название станции">
-            <input type="submit">
-        </form>
+        <div class="row">
+            <div class="col-md-4">
+                <form role="form" action="addStation" method="post">
+                    <div class="form-group">
+                        <label>Имя станции:</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                </form>
+            </div>
+        </div>
     </jsp:body>
-</t:mainTemplate>
+</t:adminTemplate>

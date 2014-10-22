@@ -29,11 +29,14 @@ public class SearchTripServlet extends HttpServlet {
             e.printStackTrace();
         }
 
+        request.setAttribute("stations", timetableService.getStations());
         request.getSession().setAttribute("timetable",timetableList);
         request.getRequestDispatcher("searchtrip.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        TimetableService timetableService = new TimetableService();
+        request.setAttribute("stations", timetableService.getStations());
         request.getRequestDispatcher("searchtrip.jsp").forward(request, response);
     }
 }

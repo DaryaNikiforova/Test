@@ -2,6 +2,7 @@ package ru.tsystems.tsproject.sbb.database.dao;
 
 import ru.tsystems.tsproject.sbb.database.entity.Ticket;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -10,4 +11,5 @@ import java.util.List;
 public interface TicketDAO {
     void addTicket(Ticket ticket);
     List<Ticket> getBoughtTickets(String stationFrom, String stationTo, int tripId);
+    int findUser(String name, String surname, Date birthDate, int tripId);
 }

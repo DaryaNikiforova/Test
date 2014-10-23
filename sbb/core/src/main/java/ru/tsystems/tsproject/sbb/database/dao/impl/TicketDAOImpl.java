@@ -4,6 +4,7 @@ import ru.tsystems.tsproject.sbb.database.dao.TicketDAO;
 import ru.tsystems.tsproject.sbb.database.entity.Ticket;
 
 import javax.persistence.EntityManager;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -31,8 +32,17 @@ public final class TicketDAOImpl implements TicketDAO {
 
     @Override
     public List<Ticket> getBoughtTickets(String stationFrom, String stationTo, int tripId) {
-        return entityManager.createQuery("select t.seat from Ticket t where t.trip.id = :id")
+        return entityManager.createQuery("select t from Ticket t where t.trip.id = :id")
                             .setParameter("id", tripId).getResultList();
+    }
+
+    @Override
+    public int findUser(String name, String surname, Date birthDate, int tripId) {
+        return entityManager.createQuery("select t from Ticket t where t.user.name = :name" +
+                                         " and t.user.surname = :surname and t.user.birthDate = :date and t.trip.id = :tripId")
+                            .setParameter("name", name).setParameter("surname", surname).setParameter("date", birthDate)
+                            .setParameter("tripId", tripId)
+                            .getFirstResult();
     }
 
 

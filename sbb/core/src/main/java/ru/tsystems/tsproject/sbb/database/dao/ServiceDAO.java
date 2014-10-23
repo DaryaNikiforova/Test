@@ -10,4 +10,5 @@ import java.util.List;
 public interface ServiceDAO {
     public List<Service> getServices();
     public double getValueById(int id);
+    public Service getServiceById(int id);
 }

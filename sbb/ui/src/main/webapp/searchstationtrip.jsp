@@ -47,7 +47,7 @@
                                         <select class="col-md-4 js-station-select" placeholder="Выберете станцию..." name="stationFrom">
                                             <option value="">Выберете станцию...</option>
                                             <c:forEach var="station" items="${stations}">
-                                                <option value="${station}">${station}</option>
+                                                <option value="${station.getName()}">${station.getName()}</option>
                                             </c:forEach>
                                         </select>
                                         <label class="control-label col-md-2">Дата</label>

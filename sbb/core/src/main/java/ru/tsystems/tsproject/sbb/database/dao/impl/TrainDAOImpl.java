@@ -18,8 +18,8 @@ public final class TrainDAOImpl implements TrainDAO {
     }
 
     @Override
-    public void addTrain(int number, int seatsCount, String name, Rate rate) {
-        Train train = new Train(number, seatsCount, name, rate);
+    public void addTrain(int number, int seatsCount, String name, int rateId) {
+        Train train = new Train(number, seatsCount, name, new Rate(rateId));
         try {
             entityManager.getTransaction().begin();
             entityManager.persist(train);

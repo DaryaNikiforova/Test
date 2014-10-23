@@ -1,5 +1,7 @@
 package ru.tsystems.tsproject.sbb.services.helpers;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -23,5 +25,10 @@ public class TimeHelper {
         cal.add(Calendar.HOUR_OF_DAY, hour);
         cal.add(Calendar.MINUTE, minute);
         return cal.getTime();
+    }
+
+    public static String formatDate(Date date) {
+        DateFormat df = new SimpleDateFormat("dd.MM.yyyy в hh:mm");
+        return df.format(date);
     }
 }

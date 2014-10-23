@@ -17,14 +17,6 @@ public class Route {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public List<Trip> getTrips() {
         return trips;
     }
@@ -44,8 +36,6 @@ public class Route {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-    private String name;
 
     public Route() {
         trips = new ArrayList<Trip>();

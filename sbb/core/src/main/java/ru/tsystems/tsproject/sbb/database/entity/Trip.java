@@ -11,12 +11,23 @@ import java.util.List;
 @Entity
 @NamedQuery(name="Trip.getTripsByRoute", query="select t from Trip t where t.route.id = :id and day(t.departureTime) = day(:date) " +
                                                "and month(t.departureTime) = month(:date) and year(t.departureTime) = year(:date)")
+@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"route_id", "train_id", "departureTime"})})
 public class Trip {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
 
     private Date departureTime;
+
+    @ManyToOne
+    private Train train;
+
+    @ManyToOne
+    private Route route;
+
+    @OneToMany(mappedBy = "trip")
+    private List<Ticket> tickets;
+
 
     public int getId() {
         return id;
@@ -57,15 +68,6 @@ public class Trip {
     public void setTickets(List<Ticket> tickets) {
         this.tickets = tickets;
     }
-
-    @ManyToOne
-    private Train train;
-
-    @ManyToOne
-    private Route route;
-
-    @OneToMany(mappedBy = "trip")
-    private List<Ticket> tickets;
 
     public Trip() {
         tickets = new ArrayList<Ticket>();

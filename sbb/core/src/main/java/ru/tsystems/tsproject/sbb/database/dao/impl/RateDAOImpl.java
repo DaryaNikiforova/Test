@@ -18,7 +18,12 @@ public class RateDAOImpl implements RateDAO {
 
     @Override
     public List<Rate> getRates() {
-        return entityManager.createQuery("select r from Rate r where r.forTrain != true").getResultList();
+        return entityManager.createQuery("select r from Rate r where r.forTrain = false").getResultList();
+    }
+
+    @Override
+    public List<Rate> getTrainRates() {
+        return entityManager.createQuery("select r from Rate r where r.forTrain = true").getResultList();
     }
 
     @Override

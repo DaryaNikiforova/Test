@@ -9,5 +9,6 @@ import java.util.List;
  */
 public interface RateDAO {
     public List<Rate> getRates();
+    public List<Rate> getTrainRates();
     public double getValueById(int id);
 }

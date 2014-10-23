@@ -1,5 +1,7 @@
 package ru.tsystems.tsproject.sbb;
 
+import org.apache.log4j.Logger;
+import ru.tsystems.tsproject.sbb.services.StationService;
 import ru.tsystems.tsproject.sbb.services.TimetableService;
 import ru.tsystems.tsproject.sbb.transferObjects.TimetableTO;
 
@@ -18,26 +20,42 @@ import java.util.List;
  * Created by apple on 21.10.14.
  */
 public class SearchStationTripServlet extends HttpServlet {
+    private static final Logger LOGGER = Logger.getLogger(SearchStationTripServlet.class);
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        TimetableService timetableService = new TimetableService();
         List<TimetableTO> timetableList = new ArrayList<TimetableTO>();
-
         try {
-            String stationFrom = request.getParameter("stationFrom");
-            Date departureDate = new SimpleDateFormat("dd.MM.yyyy").parse(request.getParameter("departureDate"));
-            timetableList = timetableService.getRoutesByStation(stationFrom, departureDate);
-        } catch (ParseException e) {
-            e.printStackTrace();
+            TimetableService timetableService = new TimetableService();
+            try {
+                String stationFrom = request.getParameter("stationFrom");
+                Date departureDate = new SimpleDateFormat("dd.MM.yyyy").parse(request.getParameter("departureDate"));
+                timetableList = timetableService.getRoutesByStation(stationFrom, departureDate);
+            } catch (ParseException e) {
+                LOGGER.error(e);
+                request.setAttribute("error", "Ввод неверного формата даты");
+                request.getRequestDispatcher("error.jsp").forward(request,response);
+                //e.printStackTrace();
+            }
+            StationService stationService = new StationService();
+            request.setAttribute("stations", stationService.getStations());
+        } catch (Exception ex) {
+            LOGGER.error(ex);
+            request.setAttribute("error", "Ошибка приложения");
+            request.getRequestDispatcher("error.jsp").forward(request,response);
         }
-
-        request.setAttribute("stations", timetableService.getStations());
         request.getSession().setAttribute("stationTimetable",timetableList);
         request.getRequestDispatcher("searchstationtrip.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        TimetableService timetableService = new TimetableService();
-        request.setAttribute("stations", timetableService.getStations());
+        try {
+            StationService stationService = new StationService();
+            request.setAttribute("stations", stationService.getStations());
+        } catch (Exception ex) {
+            LOGGER.error(ex);
+            request.setAttribute("error", "Ошибка приложения");
+            request.getRequestDispatcher("error.jsp").forward(request,response);
+        }
         request.getRequestDispatcher("searchstationtrip.jsp").forward(request, response);
     }
 }

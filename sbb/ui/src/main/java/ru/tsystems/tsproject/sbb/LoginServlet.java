@@ -1,6 +1,8 @@
 package ru.tsystems.tsproject.sbb;
 
+import org.apache.log4j.Logger;
 import ru.tsystems.tsproject.sbb.services.UserService;
+import ru.tsystems.tsproject.sbb.transferObjects.UserTO;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -8,21 +10,29 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created by apple on 14.10.14.
  */
 public class LoginServlet extends HttpServlet {
+
+    private static final Logger LOGGER = Logger.getLogger(LoginServlet.class);
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        UserService userService = new UserService();
-        List<String> params = userService.getUser(request.getParameter("login"));
-        //PrintWriter out = response.getWriter();
-        if (params.size() > 0) {
-            //out.println(params.get(0) + " " + params.get(1));
+
+        UserTO user = new UserTO();
+        try {
+            UserService userService = new UserService();
+            user = userService.getUser(request.getParameter("login"));
+        } catch (Exception ex) {
+            LOGGER.error(ex);
+            request.setAttribute("error", "Сервис недоступен");
+            request.getRequestDispatcher("error.jsp").forward(request, response);
+        }
+        if (user != null) {
             HttpSession session = request.getSession();
-            session.setAttribute("role", params.get(1));
-            session.setAttribute("login", params.get(0));
+            session.setAttribute("role", user.getRole());
+            session.setAttribute("login", user.getLogin());
         }
         response.sendRedirect("index.jsp");
     }

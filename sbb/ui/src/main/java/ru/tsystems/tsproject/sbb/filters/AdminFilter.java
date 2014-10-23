@@ -1,5 +1,7 @@
 package ru.tsystems.tsproject.sbb.filters;
 
+import org.apache.log4j.Logger;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,10 +13,15 @@ import java.io.IOException;
  */
 
 public class AdminFilter implements Filter {
+
+    private static final Logger LOGGER = Logger.getLogger(AdminFilter.class);
+
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
+        LOGGER.debug("Start AdminFilter for user role checking");
+        LOGGER.info("AdminFilter starting");
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
         boolean isAdmin = true;
@@ -34,8 +41,9 @@ public class AdminFilter implements Filter {
             isAdmin = false;
         }
         if (!isAdmin) {
-            response.sendRedirect("/index.jsp");
+            response.sendRedirect("index.jsp");
         }
+        LOGGER.debug("AdminFilter completed");
     }
 
     public void init(FilterConfig config) throws ServletException {

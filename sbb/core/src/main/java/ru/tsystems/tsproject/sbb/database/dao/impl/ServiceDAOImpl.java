@@ -22,6 +22,11 @@ public final class ServiceDAOImpl implements ServiceDAO{
     }
 
     @Override
+    public Service getServiceById(int id) {
+        return (Service) entityManager.find(Service.class, id);
+    }
+
+    @Override
     public double getValueById(int id) {
          return (Double) entityManager.createQuery("select s.value from Service s where s.id=:id")
                                       .setParameter("id", id).getSingleResult();

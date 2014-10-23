@@ -14,10 +14,18 @@
         <script src="${pageContext.request.contextPath}/resources/js/selectize.min.js"></script>
         <script type="text/javascript">
             $(function () {
-                $('.js-station-select').selectize();
+                var stationOptions = [
+                    <c:forEach var="station" items="${stations}">
+                    {value: '${station.getName()}', text: '${station.getName()}'},
+                    </c:forEach>
+                ];
 
-                var lastPanel = $('.js-last-panel');
+
                 var stationCount = 2;
+                var lastPanel = $('.js-last-panel');
+                var select = $('.js-station-select').selectize();
+                    select[0].selectize.setValue('${param.name1}');
+                    select[1].selectize.setValue('${param.name2}');
 
                 var withIncreasedCount = function(func) {
                     func(++stationCount);
@@ -38,20 +46,20 @@
                             "<div class=\"panel-body\">" +
                             "<div class=\"form-group\">" +
                             "<label class=\"control-label col-md-4\">Станция №" + count + "</label>" +
-                            "<select class=\"col-md-8 js-station-select" + count + "\" placeholder=\"Выберете станцию...\"  name=\"name" + count + "\">" +
+                            "<select class=\"col-md-8 js-station-select" + count + "\" placeholder=\"Выберете станцию...\"  name=\"name" + count + "\" required>" +
                             "<option value=\"\">Выберете станцию...</option>" +
                             "</select>" +
                             "</div>" +
                             "<div class=\"form-group\">" +
                             "<label class=\"control-label col-md-4\">Время прибытия</label>" +
                             "<p class=\"form-control-static col-md-2 text-right\">часы</p>" +
-                            "<div class=\"col-md-2\"><input type=\"number\" class=\"form-control\" min=\"0\" placeholder=\"0\" maxlength=\"4\" name=\"hour" + count + "\"></div>" +
+                            "<div class=\"col-md-2\"><input type=\"number\" class=\"form-control\" min=\"0\" placeholder=\"0\" maxlength=\"4\" name=\"hour" + count + "\" required></div>" +
                             "<p class=\"form-control-static col-md-2 text-right\">минуты</p>" +
-                            "<div class=\"col-md-2\"><input type=\"number\" class=\"form-control\" min=\"0\" max=\"60\" placeholder=\"0\" name=\"minute" + count + "\"></div>" +
+                            "<div class=\"col-md-2\"><input type=\"number\" class=\"form-control\" min=\"0\" max=\"60\" placeholder=\"0\" name=\"minute" + count + "\" required></div>" +
                             "</div>" +
                             "<div class=\"form-group\">" +
                             "<label class=\"control-label col-md-4\">Дистанция</label>" +
-                            "<div class=\"col-md-2\"><input type=\"number\" min=\"0\" class=\"form-control\" placeholder=\"0\" maxlength=\"5\" name=\"distance" + count + "\"></div>" +
+                            "<div class=\"col-md-2\"><input type=\"number\" min=\"0\" class=\"form-control\" placeholder=\"0\" maxlength=\"5\" name=\"distance" + count + "\" required></div>" +
                             "</div>" + getRemoveControl(count) + "</div></div>";
                 }
 
@@ -68,7 +76,10 @@
                 $('.js-add-station').click(function() {
                     withIncreasedCount(function(count) {
                         $(lastPanel).before(getStationControl(count));
-                        $('.js-station-select' + count).selectize();
+                        var select = $('.js-station-select' + count).selectize()[0].selectize;
+                        for(var i = 0; i < stationOptions.length; i++) {
+                            select.addOption(stationOptions[i]);
+                        }
                         $('.js-remove-control' + (count-1)).remove();
                         setRemoveStationAction(count);
                     });
@@ -81,15 +92,22 @@
         <div class="row">
             <div class="col-md-8">
                 <form role="form" class="form-horizontal" action="addRoute" method="post">
+                    <c:if test="${errors != null && !errors.isEmpty()}">
+                    <div class="form-group has-error">
+                        <c:forEach var="error" items="${errors}">
+                            <label class="control-label">* ${error.value}</label>
+                        </c:forEach>
+                    </div>
+                    </c:if>
                     <div class="panel panel-default">
                         <div class="panel-body">
                             <div class="form-group">
                                 <label class="control-label col-md-4">Станция №1</label>
-                                <select class="col-md-8 js-station-select" placeholder="Выберете станцию..." name="name1">
+                                <select class="col-md-8 js-station-select" placeholder="Выберете станцию..." name="name1" required>
                                     <option value="">Выберете станцию...</option>
-                                    <option value="1">Москва</option>
-                                    <option value="2">Санкт-Петербург</option>
-                                    <option value="3">Казань</option>
+                                    <c:forEach var="station" items="${stations}">
+                                        <option value="${station.getName()}">${station.getName()}</option>
+                                    </c:forEach>
                                 </select>
                             </div>
                         </div>
@@ -99,23 +117,23 @@
                         <div class="panel-body">
                             <div class="form-group">
                                 <label class="control-label col-md-4">Станция №2</label>
-                                <select class="col-md-8 js-station-select" placeholder="Выберете станцию..." name="name2">
+                                <select class="col-md-8 js-station-select" placeholder="Выберете станцию..." name="name2" required>
                                     <option value="">Выберете станцию...</option>
-                                    <option value="1">Москва</option>
-                                    <option value="2">Санкт-Петербург</option>
-                                    <option value="3">Казань</option>
+                                    <c:forEach var="station" items="${stations}">
+                                        <option value="${station.getName()}">${station.getName()}</option>
+                                    </c:forEach>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-md-4">Время прибытия</label>
                                 <p class="form-control-static col-md-2 text-right">часы</p>
-                                <div class="col-md-2"><input type="number" class="form-control" min="0" placeholder="0" maxlength="4" name="hour2"></div>
+                                <div class="col-md-2"><input type="number" class="form-control" min="0" placeholder="0" maxlength="4" name="hour2" required value="${param.hour2}"></div>
                                 <p class="form-control-static col-md-2 text-right">минуты</p>
-                                <div class="col-md-2"><input type="number" class="form-control" min="0" max="60" placeholder="0" name="minute2"></div>
+                                <div class="col-md-2"><input type="number" class="form-control" min="0" max="60" placeholder="0" name="minute2" required value="${param.minute2}"></div>
                             </div>
                             <div class="form-group">
                                 <label class="control-label col-md-4">Дистанция</label>
-                                <div class="col-md-2"><input type="number" min="0" class="form-control" placeholder="0" maxlength="5" name="distance2"></div>
+                                <div class="col-md-2"><input type="number" min="0" class="form-control" placeholder="0" maxlength="5" name="distance2" required value="${param.distance2}"></div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +144,7 @@
                         </div>
                     </div>
 
-                    <button type="button" class="btn btn-primary pull-right">Создать маршрут</button>
+                    <input type="submit" class="btn btn-primary pull-right" value="Создать маршрут">
                 </form>
             </div>
         </div>

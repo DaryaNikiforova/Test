@@ -6,10 +6,27 @@ import javax.persistence.*;
  * Created by apple on 14.10.14.
  */
 @Entity
+@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"route_id", "station_id"}),
+                            @UniqueConstraint(columnNames = {"route_id", "seqNumber"})})
 public class RouteEntry {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
+
+    private double distance;
+
+    private int seqNumber;
+
+    private int hour;
+
+    private int minute;
+
+    @ManyToOne
+    private Station station;
+
+    @ManyToOne
+    private Route route;
+
 
     public int getHour() {
         return hour;
@@ -58,20 +75,6 @@ public class RouteEntry {
     public void setRoute(Route route) {
         this.route = route;
     }
-
-    private double distance;
-
-    private int seqNumber;
-
-    private int hour;
-
-    private int minute;
-
-    @ManyToOne
-    private Station station;
-
-    @ManyToOne
-    private Route route;
 
     public RouteEntry() {}
 }

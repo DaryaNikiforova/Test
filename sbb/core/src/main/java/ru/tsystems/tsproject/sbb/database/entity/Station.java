@@ -8,7 +8,19 @@ import java.util.List;
  * Created by apple on 14.10.14.
  */
 @Entity
+@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"name"})})
 public class Station {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private int id;
+
+    private String name;
+
+    @OneToMany(mappedBy="station")
+    List<RouteEntry> routeEntries;
+
+
     public int getId() {
         return id;
     }
@@ -32,15 +44,6 @@ public class Station {
     public void setRouteEntries(List<RouteEntry> routeEntries) {
         this.routeEntries = routeEntries;
     }
-
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private int id;
-
-    private String name;
-
-    @OneToMany(mappedBy="station")
-    List<RouteEntry> routeEntries;
 
     public Station() {
         routeEntries = new ArrayList<RouteEntry>();

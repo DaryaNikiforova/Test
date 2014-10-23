@@ -24,7 +24,7 @@
                         <tbody>
                         <c:forEach var="station" items="${stations}">
                             <tr>
-                                <td>${station}</td>
+                                <td>${station.getName()}</td>
                                 <td class="text-right"><a href="#">редактировать</a></td>
                             </tr>
                         </c:forEach>

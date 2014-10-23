@@ -94,65 +94,6 @@ public class TimetableService {
         return results;
     }
 
-    public void addStation(String station) {
-        stationDAO.addStation(station);
-    }
-
-    public List<String> getStations() {
-        return stationDAO.getStations();
-    }
-
-    public List<TrainTO> getTrains() {
-        List<Train> list = trainDAO.getTrains();
-        List<TrainTO> result = new ArrayList<TrainTO>();
-        for (Train t:list) {
-            TrainTO train = new TrainTO();
-            train.setNumber(t.getId());
-            train.setName(t.getName());
-            train.setSeatCount(t.getSeatCount());
-            train.setRateName(t.getRate().getName());
-            train.setRateId(t.getRate().getId());
-            result.add(train);
-        }
-        return result;
-    }
-
-    public void addTrain(TrainTO train) {
-        trainDAO.addTrain(train.getNumber(), train.getSeatCount(), train.getName(), new Rate(train.getRateId()));
-    }
-
-    public List<RouteTO> getAllRoutes() {
-        List<Route> routes = new ArrayList<Route>();
-        List<RouteTO> results = new ArrayList<RouteTO>();
-        for (Route r:routes) {
-            RouteTO route = new RouteTO();
-            route.setNumber(r.getId());
-            route.setDistance(RouteHelper.getRouteDistance(r));
-            route.setRoute(RouteHelper.getRouteName(r));
-            route.setTime(RouteHelper.getRouteTime(r));
-            results.add(route);
-        }
-        return results;
-    }
-
-    public void addRoute(RouteTO routeTO) {
-        List<RouteEntryTO> routeEntries = routeTO.getRouteEntries();
-        List<RouteEntry> result = new ArrayList<RouteEntry>();
-        Route route = new Route();
-        for (RouteEntryTO r : routeEntries) {
-            RouteEntry routeEntry = new RouteEntry();
-            routeEntry.setDistance(r.getDistance());
-            routeEntry.setMinute(r.getMinute());
-            routeEntry.setHour(r.getHour());
-            routeEntry.setSeqNumber(r.getSeqNumber());
-            routeEntry.setStation(stationDAO.getStation(r.getStationName()));
-            routeEntry.setRoute(route);
-            result.add(routeEntry);
-        }
-        route.setRouteEntries(result);
-        routeDAO.addRoute(route);
-    }
-
     public List<TripTO> getAllTrips() {
         List<Trip> trips = tripDAO.getAllTrips();
         List<TripTO> result = new ArrayList<TripTO>();

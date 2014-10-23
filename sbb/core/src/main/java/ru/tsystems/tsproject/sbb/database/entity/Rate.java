@@ -1,15 +1,24 @@
 package ru.tsystems.tsproject.sbb.database.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by apple on 14.10.14.
  */
 @Entity
+@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"name"})})
 public class Rate {
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private int id;
+
+    private String name;
+
+    private double value;
+
+    private boolean forTrain;
+
+
     public int getId() {
         return id;
     }
@@ -26,15 +35,6 @@ public class Rate {
         this.name = name;
     }
 
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private int id;
-
-    private String name;
-
-    private double value;
-
-    private boolean forTrain;
 
     public boolean isForTrain() {
         return forTrain;

@@ -11,20 +11,31 @@ public class TicketTO {
     private String stationFrom;
     private String stationTo;
     private int routeId;
+    private int tripId;
     private String trip;
     private Date departure;
     private Date arrival;
     private String userName;
     private String userSurname;
     private String birthDate;
-    private int seatNumber;
+    private int seatNumber = 0;
     private int rateType;
     private String rateName;
     private int trainRate;
+    private String login;
     private Map<Long, String> services;
     private List<Integer> seats;
     private Map<Long, String> rateTypes;
     private double price;
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
 
     public String getRateName() {
         return rateName;
@@ -64,6 +75,14 @@ public class TicketTO {
         rateTypes = new HashMap<Long, String>();
     }
 
+    public int getTripId() {
+        return tripId;
+    }
+
+    public void setTripId(int tripId) {
+        this.tripId = tripId;
+    }
+
     public int getRouteId() {
         return routeId;
     }
@@ -88,16 +107,16 @@ public class TicketTO {
         this.trip = trip;
     }
 
-    public String getDeparture() {
-        return departure.toString();
+    public Date getDeparture() {
+        return departure;
     }
 
     public void setDeparture(Date departure) {
         this.departure = departure;
     }
 
-    public String getArrival() {
-        return arrival.toString();
+    public Date getArrival() {
+        return arrival;
     }
 
     public void setArrival(Date arrival) {

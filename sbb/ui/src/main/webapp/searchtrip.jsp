@@ -19,7 +19,9 @@
         <script src="${pageContext.request.contextPath}/resources/js/selectize.min.js"></script>
         <script type="text/javascript">
             $(function () {
-                $('.js-station-select').selectize();
+                var select = $('.js-station-select').selectize();
+                select[0].selectize.setValue('${param.stationFrom}');
+                select[1].selectize.setValue('${param.stationTo}');
                 $('.js-timepicker').datetimepicker({
                     language: 'ru'
                 });
@@ -47,12 +49,12 @@
                                         <select class="col-md-4 js-station-select" placeholder="Выберете станцию..." name="stationFrom">
                                             <option value="">Выберете станцию...</option>
                                             <c:forEach var="station" items="${stations}">
-                                                <option value="${station}">${station}</option>
+                                                <option value="${station.getName()}">${station.getName()}</option>
                                             </c:forEach>
                                         </select>
                                         <label class="control-label col-md-1">C</label>
                                         <div class='input-group date js-timepicker col-md-4'>
-                                            <input type='text' class="form-control" placeholder="Дата и время..." name="departure"/>
+                                            <input type='text' class="form-control" placeholder="Дата и время..." name="departure" value="${param.departure}"/>
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                                         </div>
                                     </div>
@@ -61,12 +63,12 @@
                                         <select class="col-md-4 js-station-select" placeholder="Выберете станцию..." name="stationTo">
                                             <option value="">Выберете станцию...</option>
                                             <c:forEach var="station" items="${stations}">
-                                                <option value="${station}">${station}</option>
+                                                <option value="${station.getName()}">${station.getName()}</option>
                                             </c:forEach>
                                         </select>
                                         <label class="control-label col-md-1">По</label>
                                         <div class='input-group date js-timepicker col-md-4'>
-                                            <input type='text' class="form-control" placeholder="Дата и время..." name="arrival"/>
+                                            <input type='text' class="form-control" placeholder="Дата и время..." name="arrival" value="${param.arrival}"/>
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                                         </div>
                                     </div>

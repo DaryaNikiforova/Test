@@ -1,5 +1,7 @@
 package ru.tsystems.tsproject.sbb.filters;
 
+import org.apache.log4j.Logger;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -10,10 +12,14 @@ import java.io.IOException;
  * Created by apple on 15.10.14.
  */
 public class AuthFilter implements Filter {
+
+    private static final Logger LOGGER = Logger.getLogger(AuthFilter.class);
+
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
+        LOGGER.debug("Start AuthFilter for user login checking");
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
         HttpSession session = request.getSession(false);
@@ -23,6 +29,7 @@ public class AuthFilter implements Filter {
         } else {
             response.sendRedirect("login.jsp");
         }
+        LOGGER.debug("AuthFilter completed");
     }
 
     public void init(FilterConfig config) throws ServletException {

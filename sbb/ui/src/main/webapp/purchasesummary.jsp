@@ -7,12 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="f" uri="http://example.com/functions" %>
 <html>
 <head>
     <title></title>
 </head>
 <body>
-<form action="purchasesummary" method="post">
+<form action="purchasecompletion" method="post">
     <table>
         <tr>
             <td>Маршрут поездки</td>
@@ -24,11 +25,11 @@
         </tr>
         <tr>
             <td>Departure</td>
-            <td>${ticket.getDeparture()}</td>
+            <td>${f:formatDate(ticket.getDeparture())}</td>
         </tr>
         <tr>
             <td>Arrival</td>
-            <td>${ticket.getArrival()}</td>
+            <td>${f:formatDate(ticket.getArrival())}</td>
         </tr>
         <tr>
             <td>Name</td>
@@ -63,6 +64,7 @@
             <td>${ticket.getPrice()}</td>
         </tr>
     </table>
+    <input type = "submit" value = "Купить">
 </form>
 </body>
 </html>

@@ -1,7 +1,13 @@
 package ru.tsystems.tsproject.sbb.secure;
 
-import ru.tsystems.tsproject.sbb.services.TimetableService;
+import org.apache.log4j.Logger;
+import ru.tsystems.tsproject.sbb.mappers.Mapper;
+import ru.tsystems.tsproject.sbb.mappers.MapperManager;
+
+import ru.tsystems.tsproject.sbb.services.TrainService;
 import ru.tsystems.tsproject.sbb.transferObjects.TrainTO;
+import ru.tsystems.tsproject.sbb.validation.ValidationManager;
+import ru.tsystems.tsproject.sbb.validation.Validator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,18 +19,36 @@ import java.io.IOException;
  * Created by apple on 19.10.14.
  */
 public class AddTrainServlet extends HttpServlet {
+
+    private static final Logger LOGGER = Logger.getLogger(AddTrainServlet.class);
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        TimetableService timetableService = new TimetableService();
-        TrainTO train = new TrainTO();
-        train.setNumber(Integer.parseInt(request.getParameter("number")));
-        train.setName(request.getParameter("name"));
-        train.setSeatCount(Integer.parseInt(request.getParameter("seatCount")));
-        train.setRateId(Integer.parseInt(request.getParameter("rate")));
-        timetableService.addTrain(train);
-        response.sendRedirect("getTrains");
+		request.setCharacterEncoding("UTF-8");
+         try {
+			TrainService trainService = new TrainService();
+	        request.setAttribute("rates", trainService.getTrainRates());
+
+	        Mapper<TrainTO> mapper = MapperManager.getMapper(TrainTO.class);
+	        TrainTO trainTO = mapper.map(request);
+	        Validator<TrainTO> validator = ValidationManager.getValidator(trainTO);
+	        if (validator.isValid()) {
+	            trainService.addTrain(trainTO);
+	            response.sendRedirect("getTrains");
+	        }
+	        else {
+	            request.setAttribute("errors", validator.getErrors());
+	            request.getRequestDispatcher("addTrain.jsp").forward(request, response);
+	        }
+        } catch (Exception ex) {
+            LOGGER.error(ex);
+            request.setAttribute("error", "Ошибка приложения");
+            request.getRequestDispatcher("error.jsp").forward(request, response);
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        TrainService trainService = new TrainService();
+        request.setAttribute("rates", trainService.getTrainRates());
         request.getRequestDispatcher("addTrain.jsp").forward(request, response);
     }
 }

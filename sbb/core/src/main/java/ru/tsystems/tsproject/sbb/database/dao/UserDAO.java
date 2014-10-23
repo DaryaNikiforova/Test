@@ -11,11 +11,9 @@ import java.util.Date;
 public interface UserDAO {
     void addUser(String name, String surname, Date birthDate, String login, String password, Role role);
 
-    //String getUsersRole(User user);
-
     Role getClientRole();
 
-    //boolean isAdmin(User user);
-
     User getUser(String login);
+
+    boolean isUserExist(String login);
 }

@@ -30,31 +30,22 @@ public final class UserDAOImpl implements UserDAO {
         }
     }
 
-    /*@Override
-    public String getUsersRole(User user) {
-        return (String) entityManager.createQuery("select u.role.name from User u where u.login = :login and u.password = :password")
-        .setParameter("login", user.getLogin())
-        .setParameter("password", user.getPassword())
-        .getSingleResult();
-    }*/
-
     @Override
     public Role getClientRole() {
         return (Role) entityManager.createQuery("select r from Role r where r.name = 'client'").getSingleResult();
     }
-
-    /*@Override
-    public boolean isAdmin(User user) {
-        return entityManager.createQuery("select u from User u where u.role.name = 'admin' and u.login = :login")
-                .setParameter("login", user.getLogin())
-                .getFirstResult() != 0;
-    }*/
-
 
     @Override
     public User getUser(String login) {
         return (User) entityManager.createQuery("select u from User u where u.login = :login")
                 .setParameter("login", login)
                 .getSingleResult();
+    }
+
+    @Override
+    public boolean isUserExist(String login) {
+        return entityManager.createQuery("select u from User u where u.login = :login")
+                .setParameter("login", login)
+                .getFirstResult() != 0;
     }
 }

@@ -9,20 +9,31 @@ import java.util.List;
  * Created by apple on 14.10.14.
  */
 @Entity
-@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"login", "password"})})
+@Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"login"}),
+                            @UniqueConstraint(columnNames = {"name", "surname", "birthDate"})})
 public class User {
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
-   private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-   private String name;
+    private String name;
 
-   private String surname;
+    private String surname;
 
-   @Past
-   private Date birthDate;
+    @Past
+    private Date birthDate;
 
-   private String login;
+    private String login;
+
+    private String password;
+
+    @OneToMany(mappedBy = "user")
+    private List<Ticket> tickets;
+
+    @OneToOne
+    @JoinColumn(name = "role_id")
+    private Role role;
+
 
     public Role getRole() {
         return role;
@@ -88,7 +99,7 @@ public class User {
         this.tickets = tickets;
     }
 
-    private String password;
+
 
    public User(String name, String surname, Date birthDate, String login, String password, Role role) {
     this();
@@ -99,14 +110,6 @@ public class User {
     this.password = password;
     this.role = role;
    }
-
-   @OneToMany(mappedBy = "user")
-   private List<Ticket> tickets;
-
-
-   @OneToOne
-   @JoinColumn(name = "role_id")
-   private Role role;
 
    public User() {
     tickets = new ArrayList<Ticket>();

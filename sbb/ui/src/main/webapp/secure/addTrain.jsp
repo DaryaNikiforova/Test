@@ -11,32 +11,42 @@
 
 <t:adminTemplate menuBlock="train" menuRow="add" pageHeader="Новая станция">
     <jsp:body>
+        <c:set var="numCondition" value="${errors.get('number').length() > 0}"/>
+        <c:set var="nameCondition" value="${errors.get('name').length() > 0}"/>
+        <c:set var="seatCondition" value="${errors.get('seatCount').length() > 0}"/>
+        <c:set var="rateCondition" value="${errors.get('rate').length() > 0}"/>
+
         <div class="row">
             <div class="col-md-4">
                 <form role="form" action="addTrain" method="post">
-                    <div class="form-group">
+                    <div class="form-group <c:if test="${numCondition}">has-error</c:if>">
                         <label>Номер</label>
-                        <input type="text" class="form-control" maxlength="10" placeholder="1099" name="number">
+                        <input type="number" class="form-control" min="1" maxlength="7" placeholder="1099" name="number" value="${param.number}" required>
+                        <c:if test="${numCondition}"><label class="control-label">${errors.get("number")}</label></c:if>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <c:if test="${nameCondition}">has-error</c:if>">
                         <label>Имя</label>
-                        <input type="text" class="form-control" maxlength="100" placeholder="Сапсан" name="name">
+                        <input type="text" class="form-control" maxlength="100" placeholder="Сапсан (не обязательно)" name="name" value="${param.name}">
+                        <c:if test="${nameCondition}"><label class="control-label">${errors.get("name")}</label></c:if>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <c:if test="${seatCondition}">has-error</c:if>">
                         <label>Количество мест</label>
-                        <input type="number" class="form-control" min="1" placeholder="100" maxlength="4" name="seatCount">
+                        <input type="number" class="form-control" min="1" placeholder="100" maxlength="4" name="seatCount" value="${param.seatCount}" required>
+                        <c:if test="${seatCondition}"><label class="control-label">${errors.get("seatCount")}</label></c:if>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <c:if test="${rateCondition}">has-error</c:if>">
                         <label>Тип поезда</label>
-                        <select class="form-control" placeholder="Выберите тип..." name="rate">
+                        <select class="form-control" placeholder="Выберите тип..." name="rate" required>
                             <option value="">Выберите тип...</option>
-                            <option value="1">Скорый</option>
-                            <option value="2">Скоростной</option>
-                            <option value="3">Ускоренный</option>
-                            <option value="4">Фирменный</option>
+                            <c:forEach var="rate" items="${rates}">
+                                <option value="${rate.getId()}" <c:if test="${rate.getId() eq param.rate}">selected="selected"</c:if>>
+                                    ${rate.getName()}
+                                </option>
+                            </c:forEach>
                         </select>
+                        <c:if test="${rateCondition}"><label class="control-label">${errors.get("rate")}</label></c:if>
                     </div>
-                    <button type="button" class="btn btn-primary">Создать поезд</button>
+                    <input type="submit" class="btn btn-primary" value="Создать поезд">
                 </form>
             </div>
         </div>

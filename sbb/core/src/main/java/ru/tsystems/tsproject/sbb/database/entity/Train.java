@@ -1,9 +1,6 @@
 package ru.tsystems.tsproject.sbb.database.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +9,21 @@ import java.util.List;
  */
 @Entity
 public class Train {
+    @Id
+    private int id;
+
+    private int seatCount;
+
+    private String name;
+
+    @OneToOne
+    private Rate rate;
+
+    @OneToMany(mappedBy = "train")
+    private List<Trip> trips;
+
+
+
     public int getId() {
         return id;
     }
@@ -36,10 +48,6 @@ public class Train {
         this.trips = trips;
     }
 
-    @Id
-    private int id;
-
-    private int seatCount;
 
     public String getName() {
         return name;
@@ -48,16 +56,6 @@ public class Train {
     public void setName(String name) {
         this.name = name;
     }
-
-    private String name;
-
-
-
-    @OneToOne
-    private Rate rate;
-
-    @OneToMany(mappedBy = "train")
-    private List<Trip> trips;
 
     public Train() {
         trips = new ArrayList<Trip>();

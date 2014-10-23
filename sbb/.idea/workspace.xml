@@ -5,69 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5004a839-5de1-4069-bd20-c53ecb4a165c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exception/UserAlreadyExistException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/UserServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/UserTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/app.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/functions.tld" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/resources/META-INF/log4j.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/log4j.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddRouteServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddRouteServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddStationServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddStationServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddTrainServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddTrainServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AdminFilter.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AdminFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AuthFilter.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AuthFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/BuyTicketServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/BuyTicketServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetRoutesServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetRoutesServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetStationsServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetStationsServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetTrainsServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetTrainsServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetTripsServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetTripsServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LoginServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LogoutServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LogoutServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/PurchaseServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/PurchaseServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Rate.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Rate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/RateDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/RateDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/RateDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/RateDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/RegisterServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/RegisterServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Role.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Route.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Route.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/RouteEntry.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/RouteEntry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/SearchStationTripServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/SearchStationTripServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/SearchTripServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/SearchTripServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Service.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/ServiceDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/ServiceDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/ServiceDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/ServiceDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Station.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Station.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Ticket.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Ticket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TicketDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TicketDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TicketDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TicketDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TicketService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TicketService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TicketTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TicketTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/helpers/TimeHelper.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/helpers/TimeHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TimetableService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TimetableService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Train.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Train.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TrainDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TrainDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TrainDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TrainDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TrainTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TrainTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Trip.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Trip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/User.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/UserDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/UserDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/UserService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/addRoute.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/addRoute.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/addStation.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/addStation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/addTrain.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/addTrain.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/Mapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/MapperManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RateTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/RouteMapperImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/RouteService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/RouteValidatorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/StationMapperImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/StationService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/StationTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/StationValidatorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/helpers/StringHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/TrainMapperImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TrainService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/TrainValidatorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/ValidationManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/Validator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/tags/adminTemplate.tag" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/tags/adminTemplate.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/buyTicket.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/buyTicket.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/getStations.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/getStations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/pom.xml" afterPath="$PROJECT_DIR$/core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/pom.xml" afterPath="$PROJECT_DIR$/ui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/purchasesummary.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/purchasesummary.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/searchstationtrip.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/searchstationtrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/searchtrip.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/searchtrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/ui.iml" afterPath="$PROJECT_DIR$/ui/ui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ui_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ui_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sbb.iws" />
@@ -109,11 +63,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddStationServlet.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AddStationServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddStationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7781457" vertical-offset="125" max-vertical-offset="630">
+            <state vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="630">
               <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ui/src/main/webapp/error.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6185567" vertical-offset="0" max-vertical-offset="330">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -188,16 +152,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LoginServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="226" max-vertical-offset="600">
-              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserAlreadyExistException.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exception/UserAlreadyExistException.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -224,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Role.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Rate.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/RouteEntry.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Train.java" />
@@ -275,6 +228,7 @@
         <option value="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/SearchTripServlet.java" />
         <option value="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/SearchStationTripServlet.java" />
         <option value="$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/ui/src/main/webapp/error.jsp" />
       </list>
     </option>
   </component>
@@ -523,7 +477,113 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
+              <option name="myItemId" value="validation" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mappers" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mappers" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbb" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,14 +620,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -628,40 +680,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="transferObjects" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -768,86 +786,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1438,7 +1376,7 @@
       <workItem from="1413893784417" duration="1707000" />
       <workItem from="1413896464938" duration="34512000" />
       <workItem from="1413984100829" duration="11214000" />
-      <workItem from="1413998068427" duration="37083000" />
+      <workItem from="1413998068427" duration="37815000" />
     </task>
     <task id="LOCAL-00001" summary="DAO, Hibernate and DB">
       <created>1412896727759</created>
@@ -1476,11 +1414,15 @@
       <created>1413947044217</created>
       <updated>1413947044217</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="validation and mapping, exceptions">
+      <created>1414043705594</created>
+      <updated>1414043705594</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="367688000" />
+    <option name="totallyTimeSpent" value="368420000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1504,7 +1446,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="41" width="1346" height="673" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04130809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1518,7 +1460,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31669536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25460124" sideWeight="0.751606" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25460124" sideWeight="0.751606" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36144578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1755,14 +1697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3392857" vertical-offset="0" max-vertical-offset="1140">
           <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/webapp/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="330">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -2071,8 +2005,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddStationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7781457" vertical-offset="125" max-vertical-offset="630">
+        <state vertical-scroll-proportion="0.0" vertical-offset="125" max-vertical-offset="630">
           <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/webapp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6185567" vertical-offset="0" max-vertical-offset="330">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding />
         </state>
       </provider>

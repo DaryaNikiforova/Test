@@ -5,114 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5004a839-5de1-4069-bd20-c53ecb4a165c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetPassengersServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/IndexServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/PassengerTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exceptions/ServiceException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exceptions/StationAlreadyExistException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exceptions/StationNotFoundException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/StationServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/TicketServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exceptions/TimeConstraintException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exceptions/TrainAlreadyExistException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/TrainServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exceptions/UserAlreadyRegisteredException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exceptions/UserNotFoundException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/images/body5.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/gk5FxslNkTTHtojXrkp-xC8hAQ4ocbp44gFQt8tMfcH3rGVtsTkPsbDajuO5ueQw.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/gk5FxslNkTTHtojXrkp-xEBKHRsDwdV-zq3HZS2_krX3rGVtsTkPsbDajuO5ueQw.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/gk5FxslNkTTHtojXrkp-xJwNa6kgmw9HIHjUBPkzL2f3rGVtsTkPsbDajuO5ueQw.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/gk5FxslNkTTHtojXrkp-xKdGPpWTn2kPFru4k7T0T-v3rGVtsTkPsbDajuO5ueQw.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/rLTvRwYavTGtXnsB7H7e_BTbgVql8nDJpwnrE27mub0.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/images/train03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/listeners/EMFListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/EntityManagerFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/providers/EntityManagerProvider.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/LoginMapperImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/LoginTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/LoginValidatorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/SearchMapperImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/SearchStationMapperImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/SearchStationTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/SearchStationValidatorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/SearchTO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/SearchValidatorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/UserMapperImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/UserValidatorImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/bootswatch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/bootswatch.min.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/error.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/error403.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/getPassengers.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exception/UserAlreadyExistException.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/exceptions/UserAlreadyExistException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/src/main/resources/META-INF/log4j.xml" afterPath="$PROJECT_DIR$/core/src/main/resources/log4j.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/log4j.xml" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/log4j.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/BuyTicketServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/BuyTicketServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LoginServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/LoginServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/LogoutServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/LogoutServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/PurchaseServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/PurchaseServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/RegisterServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/RegisterServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/SearchStationTripServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/SearchStationTripServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/SearchTripServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/SearchTripServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddRouteServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/AddRouteServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddStationServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/AddStationServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/AddTrainServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/AddTrainServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetRoutesServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetRoutesServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetStationsServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetStationsServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetTrainsServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetTrainsServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/secure/GetTripsServlet.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetTripsServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/app.log" afterPath="$PROJECT_DIR$/project.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AdminFilter.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AdminFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AuthFilter.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/AuthFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/FactoryDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/FactoryDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/Main.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/MapperManager.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/MapperManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Rate.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Rate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RateTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RateTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Role.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Route.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Route.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/RouteDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/RouteDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/RouteEntry.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/RouteEntry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RouteEntryTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RouteEntryTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/helpers/RouteHelper.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/helpers/RouteHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/RouteMapperImpl.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/RouteMapperImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/RouteService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/RouteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RouteTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RouteTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Service.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Station.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Station.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/StationDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/StationDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/StationDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/StationDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/StationMapperImpl.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/StationMapperImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/StationService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/StationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/StationTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/StationTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/StationValidatorImpl.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/StationValidatorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Ticket.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Ticket.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TicketDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TicketDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TicketDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TicketDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/helpers/TicketHelper.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/helpers/TicketHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TicketService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TicketService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TicketTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TicketTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/helpers/TimeHelper.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/helpers/TimeHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TimetableService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TimetableService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TimetableTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TimetableTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Train.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Train.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TrainDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/TrainDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TrainDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/TrainDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/TrainMapperImpl.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/TrainMapperImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TrainService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TrainService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TrainTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TrainTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/TrainValidatorImpl.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/TrainValidatorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Trip.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/Trip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TripTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TripTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/User.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/UserDAO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/UserDAOImpl.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/database/dao/impl/UserDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/UserService.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/UserServiceTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/UserServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/UserTO.java" afterPath="$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/UserTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/ValidationManager.java" afterPath="$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/ValidationManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/addRoute.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/addRoute.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/addStation.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/addStation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/addTrain.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/addTrain.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/tags/flatTemplate.tag" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/flatbootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/flatselectize.bootstrap3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/jquery-1.11.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/magister.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/metisMenu.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/metisMenu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/modernizr.custom.72241.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/moment-with-locales.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/open-sans.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/sb-admin-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/sb-admin-2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/selectize.bootstrap3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/js/selectize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ui/src/main/webapp/resources/css/wire-one.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/tags/adminTemplate.tag" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/tags/adminTemplate.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/buyTicket.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/buyTicket.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/functions.tld" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/functions.tld" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/getRoutes.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/getRoutes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/getStations.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/getStations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/getTrains.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/getTrains.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/secure/getTrips.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/secure/getTrips.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/tags/mainTemplate.tag" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/tags/mainTemplate.tag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/core/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/pom.xml" afterPath="$PROJECT_DIR$/core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/pom.xml" afterPath="$PROJECT_DIR$/ui/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/purchasesummary.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/purchasesummary.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/registration.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/registration.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/searchstationtrip.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/searchstationtrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/searchtrip.jsp" afterPath="$PROJECT_DIR$/ui/src/main/webapp/searchtrip.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/ui.iml" afterPath="$PROJECT_DIR$/ui/ui.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ui_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ui_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/ui/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sbb.iws" />
@@ -139,120 +85,7 @@
     <favorites_list name="sbb" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PurchaseServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/PurchaseServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="600">
-              <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicketService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TicketService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1516" max-vertical-offset="3750">
-              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-              <folding>
-                <element signature="e#7516#7530#0" expanded="true" />
-                <element signature="e#7810#7824#0" expanded="true" />
-                <element signature="e#10082#10099#0" expanded="true" />
-                <element signature="e#10341#10350#0" expanded="true" />
-                <element signature="e#11277#11290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicketServiceTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/TicketServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4562" max-vertical-offset="8085">
-              <caret line="311" column="58" selection-start-line="311" selection-start-column="58" selection-end-line="311" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4547#4556#0" expanded="true" />
-                <element signature="e#9065#9074#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetStationsServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetStationsServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="660">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetRoutesServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetRoutesServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="825">
-              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetPassengersServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetPassengersServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="660">
-              <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="purchasesummary.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/webapp/purchasesummary.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.5422535" vertical-offset="0" max-vertical-offset="1485">
-              <caret line="86" column="88" selection-start-line="86" selection-start-column="88" selection-end-line="86" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuyTicketServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/BuyTicketServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1215">
-              <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetTripsServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetTripsServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="675">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetTrainsServlet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetTrainsServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="690">
-              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -500,342 +333,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tags" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="secure" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="validation" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mappers" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ui" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="secure" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -848,156 +345,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbb" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1691,7 +1038,7 @@
       <workItem from="1414106044860" duration="8250000" />
       <workItem from="1414120645699" duration="18467000" />
       <workItem from="1414145333696" duration="51180000" />
-      <workItem from="1414264255943" duration="54193000" />
+      <workItem from="1414264255943" duration="55559000" />
     </task>
     <task id="LOCAL-00001" summary="DAO, Hibernate and DB">
       <created>1412896727759</created>
@@ -1737,11 +1084,15 @@
       <created>1414044423694</created>
       <updated>1414044423694</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary=" new commit">
+      <created>1414391701576</created>
+      <updated>1414391701576</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="514012000" />
+    <option name="totallyTimeSpent" value="515378000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1765,7 +1116,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="41" width="1366" height="681" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04130809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1779,7 +1130,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31669536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3021148" sideWeight="0.66773164" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24244712" sideWeight="0.66773164" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41086587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1789,7 +1140,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32767403" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39558575" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3293718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3021148" sideWeight="0.3290735" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13217522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1871,86 +1222,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RateTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="375">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RouteEntryTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/StationTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TicketTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TimetableTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8142857" vertical-offset="90" max-vertical-offset="495">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/PassengerTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.042857144" vertical-offset="315" max-vertical-offset="675">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TripTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21428572" vertical-offset="0" max-vertical-offset="705">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/TrainTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12857144" vertical-offset="0" max-vertical-offset="450">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/UserTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12064343" vertical-offset="0" max-vertical-offset="750">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/transferObjects/RouteTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20107238" vertical-offset="0" max-vertical-offset="705">
@@ -1963,22 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.08571429" vertical-offset="45" max-vertical-offset="495">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/AddRouteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1485">
-          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/AddStationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1335">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -2038,19 +1293,6 @@
         <state vertical-scroll-proportion="0.43734643" vertical-offset="122" max-vertical-offset="1410">
           <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/StationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5110565" vertical-offset="47" max-vertical-offset="1350">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#3261#3269#0" expanded="true" />
-            <element signature="e#3647#3658#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2220,68 +1462,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/BuyTicketServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1215">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetTripsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="675">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetTrainsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="690">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetStationsServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="660">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetRoutesServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="825">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetPassengersServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="660">
-          <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/TicketServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4562" max-vertical-offset="8085">
-          <caret line="311" column="58" selection-start-line="311" selection-start-column="58" selection-end-line="311" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4547#4556#0" expanded="true" />
-            <element signature="e#9065#9074#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/TicketService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1516" max-vertical-offset="3750">
@@ -2306,8 +1486,179 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ui/src/main/webapp/purchasesummary.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.5422535" vertical-offset="0" max-vertical-offset="1485">
+        <state vertical-scroll-proportion="2.6987448" vertical-offset="0" max-vertical-offset="1485">
           <caret line="86" column="88" selection-start-line="86" selection-start-column="88" selection-end-line="86" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetRoutesServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6115538" vertical-offset="323" max-vertical-offset="825">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetStationsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7009524" vertical-offset="67" max-vertical-offset="660">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/test/java/ru/tsystems/tsproject/sbb/TicketServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19619048" vertical-offset="4562" max-vertical-offset="8085">
+          <caret line="311" column="58" selection-start-line="311" selection-start-column="58" selection-end-line="311" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4547#4556#0" expanded="true" />
+            <element signature="e#9065#9074#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetPassengersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64416057" vertical-offset="112" max-vertical-offset="660">
+          <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/BuyTicketServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41058394" vertical-offset="255" max-vertical-offset="1215">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetTripsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53467155" vertical-offset="127" max-vertical-offset="675">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/GetTrainsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54744524" vertical-offset="135" max-vertical-offset="690">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10695187" vertical-offset="0" max-vertical-offset="561">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/RouteMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57481754" vertical-offset="45" max-vertical-offset="615">
+          <caret line="29" column="94" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/LoginMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32085562" vertical-offset="0" max-vertical-offset="561">
+          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/impl/TrainMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19160584" vertical-offset="0" max-vertical-offset="548">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/mappers/MapperManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27807486" vertical-offset="24" max-vertical-offset="585">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34759358" vertical-offset="0" max-vertical-offset="561">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/validation/impl/LoginValidatorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23357664" vertical-offset="52" max-vertical-offset="600">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/AddStationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41058394" vertical-offset="300" max-vertical-offset="1035">
+          <caret line="57" column="70" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/listeners/EMFListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53475934" vertical-offset="0" max-vertical-offset="561">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/providers/EntityManagerProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="561">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#255#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/filters/EntityManagerFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.520073" vertical-offset="0" max-vertical-offset="548">
+          <caret line="24" column="62" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/ru/tsystems/tsproject/sbb/services/StationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.98573977" vertical-offset="287" max-vertical-offset="1320">
+          <caret line="69" column="58" selection-start-line="68" selection-start-column="11" selection-end-line="69" selection-end-column="58" />
+          <folding>
+            <element signature="e#3261#3269#0" expanded="true" />
+            <element signature="e#3647#3658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/src/main/java/ru/tsystems/tsproject/sbb/controllers/secure/AddRouteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3138686" vertical-offset="0" max-vertical-offset="1230">
+          <caret line="67" column="9" selection-start-line="65" selection-start-column="11" selection-end-line="67" selection-end-column="9" />
           <folding />
         </state>
       </provider>

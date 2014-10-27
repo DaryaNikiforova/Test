@@ -6,7 +6,10 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by apple on 14.10.14.
+ * Represent passengers train ticket. One passenger can buy more than one ticket at a time, but
+ * not for one trip. Each ticket uses one rate for price calculation. Uniqueness defines by sets -
+ * "trip id, user id" and "seat number, trip id".
+ * @author Nikiforova Daria
  */
 @Entity
 @Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"trip_id","user_id"}),

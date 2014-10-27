@@ -1,7 +1,8 @@
 package ru.tsystems.tsproject.sbb.transferObjects;
 
 /**
- * Created by apple on 19.10.14.
+ * Represents client entity of Train.
+ * @author Daria Nikiforova
  */
 public class TrainTO {
     private int number;

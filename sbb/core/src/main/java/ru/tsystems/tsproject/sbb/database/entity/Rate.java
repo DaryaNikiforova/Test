@@ -3,21 +3,42 @@ package ru.tsystems.tsproject.sbb.database.entity;
 import javax.persistence.*;
 
 /**
- * Created by apple on 14.10.14.
+ * Represents fees and charges for calculating ticket prices. Uniqueness defines by rates name.
+ * @author Daria Nikiforova
  */
 @Entity
 @Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"name"})})
 public class Rate {
+    /**
+     * Id for uniqueness each rate entry.
+     */
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
 
+    /**
+     * The rate name.
+     */
     private String name;
 
+    /**
+     * Rate value.
+     */
     private double value;
+
+    /**
+     * Indicates is this rate relates to train (express, speedy, etc.)
+     */
 
     private boolean forTrain;
 
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
+    }
 
     public int getId() {
         return id;
@@ -49,4 +70,5 @@ public class Rate {
     public Rate(int id) {
         this.id = id;
     }
+
 }

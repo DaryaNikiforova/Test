@@ -1,7 +1,8 @@
 package ru.tsystems.tsproject.sbb.transferObjects;
 
 /**
- * Created by apple on 22.10.2014.
+ * Represents client entity of Rate.
+ * @author Daria Nikiforova
  */
 public class RateTO {
 

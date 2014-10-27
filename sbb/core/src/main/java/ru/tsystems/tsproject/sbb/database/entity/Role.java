@@ -3,7 +3,8 @@ package ru.tsystems.tsproject.sbb.database.entity;
 import javax.persistence.*;
 
 /**
- * Created by apple on 14.10.14.
+ * Represents users role for users authentication. Uniqueness defines by roles name.
+ * @author Daria Nikiforova
  */
 @Entity
 public class Role {

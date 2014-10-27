@@ -9,11 +9,13 @@ import java.util.Date;
  * Created by apple on 14.10.14.
  */
 public interface UserDAO {
-    void addUser(String name, String surname, Date birthDate, String login, String password, Role role);
+    void addUser(User user);
 
     Role getClientRole();
 
     User getUser(String login);
 
     boolean isUserExist(String login);
+
+    boolean isUserExist(String name, String surname, Date birthDate);
 }

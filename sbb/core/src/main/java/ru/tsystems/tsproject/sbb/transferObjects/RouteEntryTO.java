@@ -1,7 +1,8 @@
 package ru.tsystems.tsproject.sbb.transferObjects;
 
 /**
- * Created by apple on 19.10.14.
+ * Represents client entity of RouteEntry.
+ * @author Daria Nikiforova
  */
 public class RouteEntryTO {
     public String getStationName() {

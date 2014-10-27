@@ -1,7 +1,8 @@
 package ru.tsystems.tsproject.sbb.transferObjects;
 
 /**
- * Created by Rin on 22.10.2014.
+ * Represents client entity of Station.
+ * @author Daria Nikiforova
  */
 public class StationTO {
     private String name;

@@ -6,11 +6,20 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Created by apple on 20.10.14.
+ * Implements set of methods to help fill transfer objects fields. Methods need to calculate
+ * metrics needed for client data representation.
+ * @author Daria Nikiforova
  */
 public class TimeHelper {
     private TimeHelper() {}
 
+    /**
+     * Calculates new date by subtracting hours and minutes.
+     * @param date being modified.
+     * @param hour to subtract.
+     * @param minute to subtract.
+     * @return modified date.
+     */
     public static Date getHourBack(Date date, int hour, int minute) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
@@ -19,6 +28,13 @@ public class TimeHelper {
         return cal.getTime();
     }
 
+    /**
+     * Calculates new date by adding hours and minutes.
+     * @param date being modified.
+     * @param hour to add.
+     * @param minute to add.
+     * @return modified date.
+     */
     public static Date addHours (Date date, int hour, int minute) {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
@@ -27,8 +43,23 @@ public class TimeHelper {
         return cal.getTime();
     }
 
+    /**
+     * Formats date to "dd.MM.yyyy в hh:mm" representation.
+     * @param date formatted date.
+     * @return string with formatted date.
+     */
     public static String formatDate(Date date) {
-        DateFormat df = new SimpleDateFormat("dd.MM.yyyy в hh:mm");
+        SimpleDateFormat df = new SimpleDateFormat("dd.MM.yyyy в hh:mm");
+        return df.format(date).replace(" ", "&nbsp;");
+    }
+
+    /**
+     * Returns the date part of date6 without time.
+     * @param date formatted date.
+     * @return only date part.
+     */
+    public static String getDatePart(Date date) {
+        DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
         return df.format(date);
     }
 }

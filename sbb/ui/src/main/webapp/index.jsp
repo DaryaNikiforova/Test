@@ -1,15 +1,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<html>
-<body>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<c:if test="${role == 'admin'}">
-  <form action="secure/addStation" post = "post">
-     <input type = "submit" value = "Добавить станцию">
-  </form>
-</c:if>
-<form action="logout" method = "post">
-    <input type = "submit" value = "Выйти">
-</form>
-</body>
-</html>
+<t:mainTemplate page="index" loggedIn="${loggedIn}" showAdmin="${showAdmin}">
+    <jsp:body>
+        <div class="row">${logdedIn} ${showAdmin}
+            <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+                <h1 class="title">Trains'n'Tickets</h1>
+                <h2 class="subtitle">Probably the best ticket service</h2>
+                <!-- Short introductory (optional) -->
+                <h3 class="tagline" style="margin-bottom: 10px;">
+                    Воспользуйтесь удобным сервисом поиска и покупки ж/д билетов<br>
+                    Начните отсюда<br>
+                </h3>
+                <h1 style="margin:0 0 20px 0; color: #ffffff">&darr;</h1>
+                <p><a href="searchTrip" class="btn btn-default btn-lg">Перейти к поиску</a></p>
+            </div>
+        </div>
+    </jsp:body>
+</t:mainTemplate>

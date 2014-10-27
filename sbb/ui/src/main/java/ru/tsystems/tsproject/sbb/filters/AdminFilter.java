@@ -29,6 +29,7 @@ public class AdminFilter implements Filter {
             HttpSession session = request.getSession(false);
             if (session.getAttribute("role") != null) {
                 if (session.getAttribute("role").equals("admin")) {
+                    req.setCharacterEncoding("UTF-8");
                     resp.setCharacterEncoding("UTF-8");
                     chain.doFilter(req, resp);
                 } else {
@@ -41,7 +42,7 @@ public class AdminFilter implements Filter {
             isAdmin = false;
         }
         if (!isAdmin) {
-            response.sendRedirect("index.jsp");
+            response.sendError(HttpServletResponse.SC_FORBIDDEN);
         }
         LOGGER.debug("AdminFilter completed");
     }

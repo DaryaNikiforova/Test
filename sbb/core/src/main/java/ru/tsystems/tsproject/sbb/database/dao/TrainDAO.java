@@ -1,6 +1,5 @@
 package ru.tsystems.tsproject.sbb.database.dao;
 
-import ru.tsystems.tsproject.sbb.database.entity.Rate;
 import ru.tsystems.tsproject.sbb.database.entity.Train;
 
 import java.util.List;
@@ -10,8 +9,10 @@ import java.util.List;
  */
 public interface TrainDAO {
     List<Train> getAllTrains();
-    void addTrain(int number, int seatsCount, String name, int rateId);
+    void addTrain(Train train);
     void deleteTrain(Train train);
     void updateTrain(Train train);
     List<Train> getTrains();
+    boolean isTrainExist(int id);
+    Train getTrain(int id);
 }

@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 public class StationMapperImpl implements Mapper<StationTO> {
     @Override
     public StationTO map(HttpServletRequest request) {
-        StationTO station = new StationTO(request.getParameter("name"));
+        StationTO station = new StationTO(request.getParameter("name").trim());
         return station;
     }
 }

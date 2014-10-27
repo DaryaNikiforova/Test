@@ -4,7 +4,8 @@ import javax.persistence.*;
 import java.util.List;
 
 /**
- * Created by apple on 14.10.14.
+ * Represents services for passengers. For each ticket fixed selected services.
+ * @author Daria Nikiforova
  */
 @Entity
 @Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"name"})})
@@ -41,5 +42,13 @@ public class Service {
 
     public Service(int id) {
         this.id = id;
+    }
+
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
     }
 }

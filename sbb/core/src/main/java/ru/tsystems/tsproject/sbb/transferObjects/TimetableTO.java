@@ -1,21 +1,32 @@
 package ru.tsystems.tsproject.sbb.transferObjects;
 
+import java.util.Date;
+
 /**
- * Created by apple on 16.10.14.
+ * Represents client Timetable entity.
+ * @author Daria Nikiforova
  */
 public class TimetableTO {
 
     private int trainNumber;
-    private String depDate;
-    private String arriveDate;
+    private Date depDate;
+    private Date arriveDate;
     private int seatCount;
     private String trainName;
     private String stationFrom;
     private String stationTo;
     private String time;
-    private String price;
     private String routeName;
+    private String distance;
     private int tripId;
+
+    public String getDistance() {
+        return distance;
+    }
+
+    public void setDistance(String distance) {
+        this.distance = distance;
+    }
 
     public int getTripId() {
         return tripId;
@@ -25,19 +36,19 @@ public class TimetableTO {
         this.tripId = tripId;
     }
 
-    public String getDepDate() {
+    public Date getDepDate() {
         return depDate;
     }
 
-    public void setDepDate(String depDate) {
+    public void setDepDate(Date depDate) {
         this.depDate = depDate;
     }
 
-    public String getArriveDate() {
+    public Date getArriveDate() {
         return arriveDate;
     }
 
-    public void setArriveDate(String arriveDate) {
+    public void setArriveDate(Date arriveDate) {
         this.arriveDate = arriveDate;
     }
 
@@ -71,14 +82,6 @@ public class TimetableTO {
 
     public void setTime(String time) {
         this.time = time;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
     }
 
     public int getSeatCount() {

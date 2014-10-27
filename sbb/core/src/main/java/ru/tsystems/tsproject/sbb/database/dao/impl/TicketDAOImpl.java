@@ -19,15 +19,7 @@ public final class TicketDAOImpl implements TicketDAO {
 
     @Override
     public void addTicket(Ticket ticket) {
-        try {
-            entityManager.getTransaction().begin();
-            entityManager.persist(ticket);
-            entityManager.getTransaction().commit();
-        }
-        finally {
-            if (entityManager.getTransaction().isActive())
-                entityManager.getTransaction().rollback();
-        }
+        entityManager.persist(ticket);
     }
 
     @Override
@@ -37,24 +29,33 @@ public final class TicketDAOImpl implements TicketDAO {
     }
 
     @Override
-    public int findUser(String name, String surname, Date birthDate, int tripId) {
-        return entityManager.createQuery("select t from Ticket t where t.user.name = :name" +
+    public boolean isUserExist(String name, String surname, Date birthDate, int tripId) {
+        return !entityManager.createQuery("select t from Ticket t where t.user.name = :name" +
                                          " and t.user.surname = :surname and t.user.birthDate = :date and t.trip.id = :tripId")
-                            .setParameter("name", name).setParameter("surname", surname).setParameter("date", birthDate)
-                            .setParameter("tripId", tripId)
-                            .getFirstResult();
-    }
-
-
-    //@Override
-   /* public List<User> getPassengers(int trainId, Date date) {
-        return (List<User>) entityManager.createQuery("select t.user from Ticket t where t.date = :date and t.id = :trainId")
-                                         .setParameter("date", date)
-                                         .setParameter("trainId", trainId)
-                                         .getResultList();
+                             .setParameter("name", name).setParameter("surname", surname).setParameter("date", birthDate)
+                             .setParameter("tripId", tripId)
+                             .getResultList()
+                             .isEmpty();
     }
 
     @Override
+    public Ticket getTicket(String login, int tripId) {
+        return (Ticket) entityManager.createQuery("select t from Ticket t where t.user.login = :login and t.trip.id = :tripId")
+                .setParameter("login", login)
+                .setParameter("tripId", tripId)
+                .getSingleResult();
+    }
+
+
+    @Override
+    public List<Ticket> getTicketsByTrip(int tripId) {
+        return (List<Ticket>) entityManager.createQuery("select t from Ticket t where t.trip.id = :id")
+                .setParameter("id", tripId)
+                .getResultList();
+    }
+
+
+    /*@Override
     public boolean isUserRegistered(User user) {
         Integer result = (Integer) entityManager.createQuery("select count(t.id) from Ticket t " +
                                                              "where t.user.name=:name and t.user.surname = :surname " +
@@ -65,5 +66,4 @@ public final class TicketDAOImpl implements TicketDAO {
                                                 .getSingleResult();
         return result>0;
     }*/
-
 }

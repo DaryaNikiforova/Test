@@ -1,7 +1,8 @@
 package ru.tsystems.tsproject.sbb.transferObjects;
 
 /**
- * Created by apple on 23.10.14.
+ * Represents client entity of User.
+ * @author Daria Nikiforova
  */
 public class UserTO {
     private String name;

@@ -18,17 +18,8 @@ public final class TrainDAOImpl implements TrainDAO {
     }
 
     @Override
-    public void addTrain(int number, int seatsCount, String name, int rateId) {
-        Train train = new Train(number, seatsCount, name, new Rate(rateId));
-        try {
-            entityManager.getTransaction().begin();
-            entityManager.persist(train);
-            entityManager.getTransaction().commit();
-        }
-        finally {
-            if (entityManager.getTransaction().isActive())
-                entityManager.getTransaction().rollback();
-        }
+    public void addTrain(Train train) {
+        entityManager.persist(train);
     }
 
     @Override
@@ -66,6 +57,19 @@ public final class TrainDAOImpl implements TrainDAO {
     @Override
     public List<Train> getTrains() {
         return entityManager.createQuery("select t from Train t").getResultList();
+    }
+
+    @Override
+    public boolean isTrainExist(int id) {
+        return !entityManager.createQuery("select t from Train t where t.id = :id")
+                             .setParameter("id", id)
+                             .getResultList()
+                             .isEmpty();
+    }
+
+    @Override
+    public Train getTrain(int id) {
+        return (Train) entityManager.createQuery("select t from Train t where t.id = :id").getSingleResult();
     }
 
 }

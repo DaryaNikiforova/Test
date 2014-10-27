@@ -11,5 +11,7 @@ import java.util.List;
 public interface TicketDAO {
     void addTicket(Ticket ticket);
     List<Ticket> getBoughtTickets(String stationFrom, String stationTo, int tripId);
-    int findUser(String name, String surname, Date birthDate, int tripId);
+    boolean isUserExist(String name, String surname, Date birthDate, int tripId);
+    Ticket getTicket(String login, int tripId);
+    List<Ticket> getTicketsByTrip(int tripId);
 }

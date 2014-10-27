@@ -17,23 +17,22 @@ public final class StationDAOImpl implements StationDAO {
     }
 
     @Override
-    public void addStation(String name) {
-        Station station = new Station(name);
-        try {
-            entityManager.getTransaction().begin();
-            entityManager.persist(station);
-            entityManager.getTransaction().commit();
-        }
-        finally {
-            if (entityManager.getTransaction().isActive())
-                entityManager.getTransaction().rollback();
-        }
+    public void addStation(Station station) {
+        entityManager.persist(station);
     }
 
     @Override
     public Station getStation(String name) {
         return (Station) entityManager.createQuery("select s from Station s where s.name = :name")
                             .setParameter("name", name).getSingleResult();
+    }
+
+    @Override
+    public boolean isStationExist(String name) {
+        return !entityManager.createQuery("select s from Station s where s.name = :name")
+                .setParameter("name", name)
+                .getResultList()
+                .isEmpty();
     }
 
     @Override

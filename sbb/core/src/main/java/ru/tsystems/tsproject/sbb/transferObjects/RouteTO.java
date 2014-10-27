@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by apple on 19.10.14.
+ * Represents client entity of Route.
+ * @author Daria Nikiforova
  */
 public class RouteTO {
 

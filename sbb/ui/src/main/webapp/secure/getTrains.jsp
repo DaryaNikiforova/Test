@@ -9,10 +9,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<t:adminTemplate menuBlock="train" menuRow="get" pageHeader="Поезда">
+<t:flatTemplate menuBlock="train" menuRow="get" pageHeader="Поезда">
     <jsp:body>
         <div class="row">
         <div class="col-md-8">
+            <c:choose>
+            <c:when test="${trains.isEmpty() || trains == null}">На данный момент никаких поездов не задано</c:when>
+            <c:otherwise>
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
@@ -21,7 +24,6 @@
                         <th>Имя</th>
                         <th>Количество мест</th>
                         <th>Тип поезда</th>
-                        <th></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -31,7 +33,6 @@
                             <td>${train.getName()}</td>
                             <td>${train.getSeatCount()}</td>
                             <td>${train.getRateName()}</td>
-                            <td><a href="#">редактировать</a></td>
                         </tr>
                     </c:forEach>
                     <tr>
@@ -40,6 +41,8 @@
                     </tbody>
                 </table>
             </div>
+            </c:otherwise>
+            </c:choose>
         </div>
     </jsp:body>
-</t:adminTemplate>
+</t:flatTemplate>

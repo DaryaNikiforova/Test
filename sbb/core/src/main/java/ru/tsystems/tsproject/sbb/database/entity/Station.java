@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by apple on 14.10.14.
+ * Represents train station. It uses for train routes and can meets in different route entries.
+ * Uniqueness defines by stations name.
+ * @author Daria Nikiforova
  */
 @Entity
 @Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"name"})})

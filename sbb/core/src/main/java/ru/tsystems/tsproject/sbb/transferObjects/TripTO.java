@@ -3,7 +3,8 @@ package ru.tsystems.tsproject.sbb.transferObjects;
 import java.util.Date;
 
 /**
- * Created by apple on 20.10.14.
+ * * Represents client entity of Trip.
+ * @author Daria Nikiforova
  */
 public class TripTO {
     private int number;
@@ -11,6 +12,16 @@ public class TripTO {
     private Date departure;
     private Date arrival;
     private int seatCount;
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     public int getSeatCount() {
         return seatCount;

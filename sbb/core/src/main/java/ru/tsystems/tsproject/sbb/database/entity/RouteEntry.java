@@ -3,7 +3,10 @@ package ru.tsystems.tsproject.sbb.database.entity;
 import javax.persistence.*;
 
 /**
- * Created by apple on 14.10.14.
+ * Represents route unit. Contains information about stations and their sequence
+ * for the route. Include one or more records for each station in different routes.
+ * Uniqueness defines by sets - "routes id, stations id" and "routes id and sequence number.
+ * @author Daria Nikiforova
  */
 @Entity
 @Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"route_id", "station_id"}),

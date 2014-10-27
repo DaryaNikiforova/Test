@@ -24,13 +24,6 @@ public class RouteDAOImpl implements RouteDAO {
 
     @Override
     public void addRoute(Route route) {
-        try {
-            entityManager.getTransaction().begin();
-            entityManager.persist(route);
-            entityManager.getTransaction().commit();
-        }
-        finally {
-            entityManager.getTransaction().rollback();
-        }
+        entityManager.persist(route);
     }
 }

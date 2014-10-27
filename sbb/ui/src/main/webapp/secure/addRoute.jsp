@@ -9,7 +9,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<t:adminTemplate menuBlock="route" menuRow="add" pageHeader="Новый маршрут">
+<t:flatTemplate menuBlock="route" menuRow="add" pageHeader="Новый маршрут">
     <jsp:attribute name="footer">
         <script src="${pageContext.request.contextPath}/resources/js/selectize.min.js"></script>
         <script type="text/javascript">
@@ -42,14 +42,14 @@
                 }
 
                 var getStationControl = function(count) {
-                    return "<div class=\"panel panel-default js-panel" + count + "\">" +
-                            "<div class=\"panel-body\">" +
+                    return "<div class=\"well js-panel" + count + "\">" +
                             "<div class=\"form-group\">" +
                             "<label class=\"control-label col-md-4\">Станция №" + count + "</label>" +
-                            "<select class=\"col-md-8 js-station-select" + count + "\" placeholder=\"Выберете станцию...\"  name=\"name" + count + "\" required>" +
+                            "<div class=\"col-md-8\">" +
+                            "<select class=\"js-station-select" + count + "\" placeholder=\"Выберете станцию...\"  name=\"name" + count + "\" required>" +
                             "<option value=\"\">Выберете станцию...</option>" +
                             "</select>" +
-                            "</div>" +
+                            "</div></div>" +
                             "<div class=\"form-group\">" +
                             "<label class=\"control-label col-md-4\">Время прибытия</label>" +
                             "<p class=\"form-control-static col-md-2 text-right\">часы</p>" +
@@ -60,7 +60,7 @@
                             "<div class=\"form-group\">" +
                             "<label class=\"control-label col-md-4\">Дистанция</label>" +
                             "<div class=\"col-md-2\"><input type=\"number\" min=\"0\" class=\"form-control\" placeholder=\"0\" maxlength=\"5\" name=\"distance" + count + "\" required></div>" +
-                            "</div>" + getRemoveControl(count) + "</div></div>";
+                            "</div>" + getRemoveControl(count) + "</div>";
                 }
 
                 var setRemoveStationAction = function(count) {
@@ -91,64 +91,68 @@
     <jsp:body>
         <div class="row">
             <div class="col-md-8">
-                <form role="form" class="form-horizontal" action="addRoute" method="post">
-                    <c:if test="${errors != null && !errors.isEmpty()}">
-                    <div class="form-group has-error">
-                        <c:forEach var="error" items="${errors}">
-                            <label class="control-label">* ${error.value}</label>
-                        </c:forEach>
-                    </div>
-                    </c:if>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label col-md-4">Станция №1</label>
-                                <select class="col-md-8 js-station-select" placeholder="Выберете станцию..." name="name1" required>
-                                    <option value="">Выберете станцию...</option>
-                                    <c:forEach var="station" items="${stations}">
-                                        <option value="${station.getName()}">${station.getName()}</option>
-                                    </c:forEach>
-                                </select>
+                <c:if test="${errors != null && !errors.isEmpty()}">
+                <div class="alert alert-danger">
+                    <c:forEach var="error" items="${errors}">
+                    <p>* ${error.value}</p>
+                    </c:forEach>
+                </div>
+                </c:if>
+                <form role="form" class="form-horizontal" action="${pageContext.request.contextPath}/secure/addRoute" method="post">
+                    <div class="well">
+                        <div class="form-group">
+                        <label class="control-label col-md-4">Станция №1</label>
+                            <div class="col-md-8">
+                            <select class="js-station-select" placeholder="Выберете станцию..." name="name1" required>
+                                <option value="">Выберете станцию...</option>
+                                <c:forEach var="station" items="${stations}">
+                                    <option value="${station.getName()}">${station.getName()}</option>
+                                </c:forEach>
+                            </select>
                             </div>
                         </div>
                     </div>
 
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label col-md-4">Станция №2</label>
-                                <select class="col-md-8 js-station-select" placeholder="Выберете станцию..." name="name2" required>
-                                    <option value="">Выберете станцию...</option>
-                                    <c:forEach var="station" items="${stations}">
-                                        <option value="${station.getName()}">${station.getName()}</option>
-                                    </c:forEach>
-                                </select>
+                    <div class="well">
+                        <div class="form-group">
+                            <label class="control-label col-md-4">Станция №2</label>
+                            <div class="col-md-8">
+                            <select class=" js-station-select" placeholder="Выберете станцию..." name="name2" required>
+                                <option value="">Выберете станцию...</option>
+                                <c:forEach var="station" items="${stations}">
+                                    <option value="${station.getName()}">${station.getName()}</option>
+                                </c:forEach>
+                            </select>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-4">Время прибытия</label>
-                                <p class="form-control-static col-md-2 text-right">часы</p>
-                                <div class="col-md-2"><input type="number" class="form-control" min="0" placeholder="0" maxlength="4" name="hour2" required value="${param.hour2}"></div>
-                                <p class="form-control-static col-md-2 text-right">минуты</p>
-                                <div class="col-md-2"><input type="number" class="form-control" min="0" max="60" placeholder="0" name="minute2" required value="${param.minute2}"></div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-4">Дистанция</label>
-                                <div class="col-md-2"><input type="number" min="0" class="form-control" placeholder="0" maxlength="5" name="distance2" required value="${param.distance2}"></div>
-                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4">Время прибытия</label>
+                            <p class="form-control-static col-md-2 text-right">часы</p>
+                            <div class="col-md-2"><input type="number" class="form-control" min="0" placeholder="0" maxlength="4" name="hour2" required value="${param.hour2}"></div>
+                            <p class="form-control-static col-md-2 text-right">минуты</p>
+                            <div class="col-md-2"><input type="number" class="form-control" min="0" max="59" placeholder="0" name="minute2" required value="${param.minute2}"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-4">Дистанция</label>
+                            <div class="col-md-2"><input type="number" min="0" class="form-control" placeholder="0" maxlength="5" name="distance2" required value="${param.distance2}"></div>
                         </div>
                     </div>
 
-                    <div class="panel panel-default js-last-panel">
-                        <div class="panel-body text-center">
+                    <div class="well js-last-panel">
+                        <div class="text-center">
                             <a class="js-add-station" style="cursor: pointer;">+ добавить станцию</a>
                         </div>
                     </div>
 
-                    <input type="submit" class="btn btn-primary pull-right" value="Создать маршрут">
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <button type="submit" class="btn btn-primary pull-right">Создать</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </jsp:body>
-</t:adminTemplate>
+</t:flatTemplate>
 </body>
 </html>

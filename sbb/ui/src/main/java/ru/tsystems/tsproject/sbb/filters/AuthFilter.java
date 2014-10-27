@@ -25,9 +25,10 @@ public class AuthFilter implements Filter {
         HttpSession session = request.getSession(false);
         if (session.getAttribute("login") != null) {
             resp.setCharacterEncoding("UTF-8");
+            req.setCharacterEncoding("UTF-8");
             chain.doFilter(req, resp);
         } else {
-            response.sendRedirect("login.jsp");
+            response.sendRedirect(request.getContextPath() + "/login");
         }
         LOGGER.debug("AuthFilter completed");
     }

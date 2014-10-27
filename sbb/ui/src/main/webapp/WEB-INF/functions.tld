@@ -13,4 +13,10 @@
         <function-class>ru.tsystems.tsproject.sbb.services.helpers.TimeHelper</function-class>
         <function-signature>java.lang.String formatDate(java.util.Date)</function-signature>
     </function>
+
+    <function>
+        <name>formatPrice</name>
+        <function-class>ru.tsystems.tsproject.sbb.services.helpers.TicketHelper</function-class>
+        <function-signature>java.lang.String formatPrice(double)</function-signature>
+    </function>
 </taglib>

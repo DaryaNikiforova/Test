@@ -6,7 +6,9 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Created by apple on 14.10.14.
+ * Represents trips for train in specified date. On one trip bought many tickets.
+ * Trips can have the same route. Uniqueness defines by routes id, trains id and time of departure.
+ * @author Daria Nikiforova
  */
 @Entity
 @NamedQuery(name="Trip.getTripsByRoute", query="select t from Trip t where t.route.id = :id and day(t.departureTime) = day(:date) " +

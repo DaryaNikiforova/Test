@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by apple on 14.10.14.
+ * Represents train. Train has many trips in different days.
+ * @author Nikiforova Daria
  */
 @Entity
 public class Train {
@@ -22,7 +23,9 @@ public class Train {
     @OneToMany(mappedBy = "train")
     private List<Trip> trips;
 
-
+    public void setRate(Rate rate) {
+        this.rate = rate;
+    }
 
     public int getId() {
         return id;

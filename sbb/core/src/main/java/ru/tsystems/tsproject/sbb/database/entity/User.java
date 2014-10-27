@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 /**
- * Created by apple on 14.10.14.
+ * Represents clients and employees. Client and employee have initially one role. Client can buy
+ * tickets for different trips. Uniqueness defines by login and name, surname and birth date.
+ * @author Nikiforova Daria
  */
 @Entity
 @Table(uniqueConstraints = {@UniqueConstraint(columnNames = {"login"}),

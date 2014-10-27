@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by apple on 14.10.14.
+ * Represents trains route. One route can uses by different trips and route has one
+ * or more route entry.
+ * @author Daria Nikiforova
  */
 @Entity
 public class Route {

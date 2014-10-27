@@ -4,23 +4,20 @@ package ru.tsystems.tsproject.sbb;
  * Created by apple on 08.10.14.
  */
 
-import ru.tsystems.tsproject.sbb.database.dao.StationDAO;
-import ru.tsystems.tsproject.sbb.database.dao.UserDAO;
-import ru.tsystems.tsproject.sbb.database.dao.impl.FactoryDAOImpl;
+import org.apache.log4j.Logger;
 import ru.tsystems.tsproject.sbb.database.entity.Role;
-import ru.tsystems.tsproject.sbb.database.entity.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.text.SimpleDateFormat;
 
 public class Main {
         static EntityManagerFactory emf = Persistence.createEntityManagerFactory("manager1");
         static EntityManager em = emf.createEntityManager();
+    private static final Logger LOGGER = Logger.getLogger(Main.class);
 
         public static void main(String[] a) throws Exception {
-
+            LOGGER.info("eeeee");
             Role role=null;
             try {
                 em.getTransaction().begin();
@@ -40,7 +37,7 @@ public class Main {
                     em.getTransaction().rollback();
             }
 
-           FactoryDAOImpl factory = new FactoryDAOImpl();
+           /*FactoryDAOImpl factory = new FactoryDAOImpl();
             try {
                 StationDAO stationDAO = factory.getStationDAO();
                 stationDAO.addStation("Udelnaya");

@@ -3,25 +3,19 @@ package ru.tsystems.tsproject.sbb.database.dao.impl;
 import ru.tsystems.tsproject.sbb.database.dao.*;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 
 /**
- * Created by apple on 04.10.14.
+ * Represents a factory for DAO entities. Creates entity manager and contains methods
+ * for getting instances of DAO instances. The EntityManager object sends into constructor of
+ * each entity class.
+ * @author Daria Nikiforova
  */
 public class FactoryDAOImpl implements FactoryDAO {
 
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("manager1");
-    private static EntityManager em = emf.createEntityManager();
+    private EntityManager em;
 
-    public FactoryDAOImpl() {
-        emf = Persistence.createEntityManagerFactory("manager1");
-        em = emf.createEntityManager();
-    }
-
-    public EntityManager getEntityManager()
-    {
-        return em;
+    public FactoryDAOImpl(EntityManager entityManager) {
+        em = entityManager;
     }
 
     @Override

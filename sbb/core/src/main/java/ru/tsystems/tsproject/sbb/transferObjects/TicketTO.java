@@ -3,7 +3,8 @@ package ru.tsystems.tsproject.sbb.transferObjects;
 import java.util.*;
 
 /**
- * Created by apple on 18.10.14.
+ * Represents client entity of Ticket.
+ * @author Daria Nikiforova
  */
 public class TicketTO {
 

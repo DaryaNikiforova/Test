@@ -1,14 +1,10 @@
 package ru.tsystems.tsproject.sbb.mappers;
 
-import ru.tsystems.tsproject.sbb.mappers.impl.RouteMapperImpl;
-import ru.tsystems.tsproject.sbb.mappers.impl.StationMapperImpl;
-import ru.tsystems.tsproject.sbb.mappers.impl.TrainMapperImpl;
-import ru.tsystems.tsproject.sbb.transferObjects.RouteTO;
-import ru.tsystems.tsproject.sbb.transferObjects.StationTO;
-import ru.tsystems.tsproject.sbb.transferObjects.TrainTO;
+import ru.tsystems.tsproject.sbb.mappers.impl.*;
+import ru.tsystems.tsproject.sbb.transferObjects.*;
 
 /**
- * Created by Rin on 22.10.2014.
+ * Created by apple on 22.10.2014.
  */
 public class MapperManager {
     public static Mapper getMapper(Class TOType) {
@@ -20,6 +16,18 @@ public class MapperManager {
         }
         if (RouteTO.class.equals(TOType)) {
             return new RouteMapperImpl();
+        }
+        if (UserTO.class.equals(TOType)) {
+            return new UserMapperImpl();
+        }
+        if (LoginTO.class.equals(TOType)) {
+            return new LoginMapperImpl();
+        }
+        if (SearchTO.class.equals(TOType)) {
+            return new SearchMapperImpl();
+        }
+        if (SearchStationTO.class.equals(TOType)) {
+            return new SearchStationMapperImpl();
         }
         return null;
     }

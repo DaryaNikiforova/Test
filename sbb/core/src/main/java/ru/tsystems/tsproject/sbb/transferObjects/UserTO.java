@@ -17,6 +17,10 @@ public class UserTO {
 
     private String role;
 
+    public UserTO() {
+        role = "client";
+    }
+
     public String getRole() {
         return role;
     }

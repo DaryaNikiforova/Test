@@ -53,7 +53,7 @@ public class LoginServlet extends HttpServlet {
                     session = request.getSession();
                     session.setAttribute("role", user.getRole());
                     session.setAttribute("login", user.getLogin());
-                    session.removeAttribute("redirect");
+                    //session.removeAttribute("redirect");
                     response.sendRedirect(request.getContextPath() + "/index");
                 } else throw new UserNotFoundException("");
             } else {

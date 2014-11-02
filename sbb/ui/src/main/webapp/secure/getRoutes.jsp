@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-md-8">
                 <c:choose>
-                <c:when test="${stations.isEmpty() || stations == null}">На данный момент никаких рейсов не задано</c:when>
+                <c:when test="${routes == null || routes.isEmpty()}">На данный момент никаких рейсов не задано</c:when>
                 <c:otherwise>
                 <div class="table-responsive">
                     <table class="table table-hover">

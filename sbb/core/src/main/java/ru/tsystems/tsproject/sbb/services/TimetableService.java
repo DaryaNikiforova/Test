@@ -30,7 +30,8 @@ public class TimetableService {
     TripDAO tripDAO;
     FactoryDAO factoryDAO;
 
-    public TimetableService(RouteEntryDAO routeEntryDAO, TripDAO tripDAO, FactoryDAO factoryDAO) {
+    public TimetableService(EntityManager entityManager, RouteEntryDAO routeEntryDAO, TripDAO tripDAO, FactoryDAO factoryDAO) {
+        this.entityManager = entityManager;
         this.routeEntryDAO = routeEntryDAO;
         this.tripDAO = tripDAO;
         this.factoryDAO = factoryDAO;

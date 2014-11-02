@@ -5,6 +5,7 @@ import ru.tsystems.tsproject.sbb.database.dao.impl.FactoryDAOImpl;
 import ru.tsystems.tsproject.sbb.providers.EntityManagerProvider;
 import ru.tsystems.tsproject.sbb.services.TicketService;
 import ru.tsystems.tsproject.sbb.services.helpers.NumberHelper;
+import ru.tsystems.tsproject.sbb.transferObjects.PassengerTO;
 
 import javax.persistence.EntityManager;
 import javax.servlet.ServletException;
@@ -12,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Gets information about passengers, registered on trip, and send it to client.
@@ -37,7 +39,8 @@ public class GetPassengersServlet extends HttpServlet {
             TicketService ticketService = new TicketService(entityManager, factoryDAO);
             if(NumberHelper.tryParseInt(request.getParameter("tripId"))) {
                 int tripId = Integer.parseInt(request.getParameter("tripId"));
-                request.setAttribute("passengers", ticketService.getPassengersByTrip(tripId));
+                List<PassengerTO> passengerTOs = ticketService.getPassengersByTrip(tripId);
+                request.setAttribute("passengers", passengerTOs);
                 request.getRequestDispatcher(request.getContextPath() + "/secure/getPassengers.jsp").forward(request, response);
             } else {
                 response.sendRedirect(request.getContextPath() + "/index");

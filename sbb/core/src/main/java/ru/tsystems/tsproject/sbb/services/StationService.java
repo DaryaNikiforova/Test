@@ -22,10 +22,12 @@ public class StationService {
 
     EntityManager entityManager;
     StationDAO stationDAO;
+
     /**
      * Creates DAO factory and DAO instance for working with Station entity
      */
-    public StationService(StationDAO stationDAO) {
+    public StationService(EntityManager entityManager, StationDAO stationDAO) {
+        this.entityManager = entityManager;
         this.stationDAO = stationDAO;
     }
 

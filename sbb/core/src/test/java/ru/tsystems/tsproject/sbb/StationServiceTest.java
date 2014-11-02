@@ -14,6 +14,7 @@ import ru.tsystems.tsproject.sbb.services.exceptions.StationAlreadyExistExceptio
 import ru.tsystems.tsproject.sbb.transferObjects.StationTO;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 
 import static org.mockito.Mockito.when;
 
@@ -34,8 +35,11 @@ public class StationServiceTest {
     @Mock
     private FactoryDAO factoryDAO;
 
+    @Mock
+    private EntityTransaction entityTransaction;
+
     @InjectMocks
-    private StationService stationService = new StationService(null);
+    private StationService stationService = new StationService(null, (StationDAO)null);
 
     /**
      * Tests method StationService.addStation. Test passed when expected data equals to created.
@@ -50,6 +54,7 @@ public class StationServiceTest {
         Station expectedStation = new Station();
         expectedStation.setName(name);
 
+        when(entityManager.getTransaction()).thenReturn(entityTransaction);
         when(stationDAO.isStationExist(name)).thenReturn(false);
         when(stationDAO.getStation(name)).thenReturn(expectedStation);
         stationService.addStation(parameterStation);
@@ -71,8 +76,8 @@ public class StationServiceTest {
         Station testedStation = new Station();
         testedStation.setName(stationName);
 
+        when(entityManager.getTransaction()).thenReturn(entityTransaction);
         when(stationDAO.isStationExist(stationName)).thenReturn(true);
         stationService.addStation(parameterStation);
     }
-
 }

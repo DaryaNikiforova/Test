@@ -27,7 +27,8 @@ public class UserService {
     EntityManager entityManager;
     UserDAO userDAO;
 
-    public UserService(UserDAO userDAO) {
+    public UserService(EntityManager entityManager, UserDAO userDAO) {
+        this.entityManager = entityManager;
         this.userDAO = userDAO;
     }
 

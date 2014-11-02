@@ -4,7 +4,6 @@ import ru.tsystems.tsproject.sbb.helpers.StringHelper;
 import ru.tsystems.tsproject.sbb.transferObjects.StationTO;
 import ru.tsystems.tsproject.sbb.validation.Validator;
 
-import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -23,7 +22,7 @@ public class StationValidatorImpl extends Validator<StationTO> {
             errors.put("name", StringHelper.encode("необходимо задать имя"));
         } else if (!pattern.matcher(station.getName()).matches()) {
             errors.put("name", StringHelper.encode(
-                    "имя не должно содержать недопустимых символов"));
+                    "имя не должно содержать недопустимые символы"));
         } else if (station.getName().length() < 3 || station.getName().length() > 100) {
             errors.put("name", StringHelper.encode(
                     "имя не должно состоять из меньше чем 3 и больше чем 100 символов"));

@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -32,24 +33,41 @@ public class BuyTicketServlet extends HttpServlet {
         try {
             TicketTO ticket = (TicketTO) request.getSession().getAttribute("ticket");
             if(NumberHelper.tryParseInt(request.getParameter("place")) &&
-                NumberHelper.tryParseInt(request.getParameter("rate"))) {
+                    NumberHelper.tryParseInt(request.getParameter("rate"))) {
                 ticket.setSeatNumber(Integer.parseInt(request.getParameter("place")));
                 ticket.setRateType(Integer.parseInt(request.getParameter("rate")));
-                String[] services = request.getParameterValues("services");
-                Map<Long, String> servicesMap = new HashMap<Long, String>();
-                if (services != null) {
-                    for (String s : services) {
-                        servicesMap.put(new Long(s), ticket.getServices().get(new Long(s)));
+
+                Map<Long, String> rateTypes = ticket.getRateTypes();
+                List<Integer> seats = ticket.getSeats();
+                boolean first = ticket.getRateTypes().containsKey((long)ticket.getRateType());
+                boolean second = ticket.getSeats().contains(ticket.getSeatNumber());
+                if (first && second) {
+                    String[] services = request.getParameterValues("services");
+                    Map<Long, String> servicesMap = new HashMap<Long, String>();
+                    if (services != null) {
+                        for (String s : services) {
+                            servicesMap.put(new Long(s), ticket.getServices().get(new Long(s)));
+                        }
                     }
+                    ticket.setServices(servicesMap);
+                    ticket.setRateName(ticket.getRateTypes().get(new Long(ticket.getRateType())));
+                    TicketService ticketService = new TicketService(entityManager, factoryDAO);
+                    ticket.setPrice(ticketService.calcPrice(ticket));
+                    request.getSession().setAttribute("ticket", ticket);
+                    request.getRequestDispatcher(request.getContextPath() + "/purchasesummary.jsp").forward(request, response);
+                } else {
+                    request.setAttribute("error", "Введены неверные данные");
+                    request.setAttribute("tripId", ticket.getTripId());
+                    request.setAttribute("stationTo", ticket.getStationTo());
+                    request.setAttribute("stationFrom", ticket.getStationFrom());
+                    request.getRequestDispatcher(request.getContextPath() + "/buyTicket.jsp").forward(request, response);
                 }
-                ticket.setServices(servicesMap);
-                ticket.setRateName(ticket.getRateTypes().get(new Long(ticket.getRateType())));
-                TicketService ticketService = new TicketService(entityManager, factoryDAO);
-                ticket.setPrice(ticketService.calcPrice(ticket));
-                request.getSession().setAttribute("ticket", ticket);
-                request.getRequestDispatcher(request.getContextPath() + "/purchasesummary.jsp").forward(request, response);
             } else {
-                throw new Exception("Введены неверные данные");
+                request.setAttribute("error", "Введены неверные данные");
+                request.setAttribute("tripId", ticket.getTripId());
+                request.setAttribute("stationTo", ticket.getStationTo());
+                request.setAttribute("stationFrom", ticket.getStationFrom());
+                request.getRequestDispatcher(request.getContextPath() + "/buyTicket.jsp").forward(request, response);
             }
         } catch (Exception ex) {
             LOGGER.error(ex);
@@ -69,7 +87,7 @@ public class BuyTicketServlet extends HttpServlet {
             String stationFrom = request.getParameter("stationFrom");
             String stationTo = request.getParameter("stationTo");
             String login = (String) request.getSession().getAttribute("login");
-        	if ((tripId != null && stationFrom != null && stationTo != null) && (!tripId.isEmpty() && !stationFrom.isEmpty() && !stationTo.isEmpty())) {
+            if ((tripId != null && stationFrom != null && stationTo != null) && (!tripId.isEmpty() && !stationFrom.isEmpty() && !stationTo.isEmpty())) {
                 TicketTO ticket = new TicketTO();
                 try {
                     TicketService ticketService = new TicketService(entityManager, factoryDAO);

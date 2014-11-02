@@ -28,7 +28,8 @@ public class TrainService {
     TrainDAO trainDAO;
     RateDAO rateDAO;
 
-    public TrainService(TrainDAO trainDAO, RateDAO rateDAO) {
+    public TrainService(EntityManager entityManager, TrainDAO trainDAO, RateDAO rateDAO) {
+        this.entityManager = entityManager;
         this.trainDAO = trainDAO;
         this.rateDAO = rateDAO;
     }

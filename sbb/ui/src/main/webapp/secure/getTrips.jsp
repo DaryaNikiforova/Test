@@ -36,6 +36,7 @@
                                 <td>${f:formatDate(trip.getDeparture())}</td>
                                 <td>${f:formatDate(trip.getArrival())}</td>
                                 <td><c:out value="${trip.getSeatCount()}"/></td>
+                                <td class="text-right"><a href="${pageContext.request.contextPath}/secure/getPassengers?tripId=${trip.getId()}">посмотреть пассажиров</a></td>
                             </tr>
                         </c:forEach>
                         </tbody>

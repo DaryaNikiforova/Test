@@ -31,7 +31,8 @@ public class RouteService {
     RouteDAO routeDAO;
     StationDAO stationDAO;
 
-    public RouteService(RouteDAO routeDAO, StationDAO stationDAO) {
+    public RouteService(RouteDAO routeDAO, StationDAO stationDAO, EntityManager entityManager) {
+        this.entityManager = entityManager;
         this.routeDAO = routeDAO;
         this.stationDAO = stationDAO;
     }

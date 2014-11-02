@@ -9,10 +9,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-<t:flatTemplate menuBlock="trip" pageHeader="Пассажиры рейса №">
+<t:flatTemplate menuBlock="trip" pageHeader="Пассажиры рейса">
     <jsp:body>
         <div class="row">
             <div class="col-md-8">
+                <c:choose>
+                <c:when test="${passengers.isEmpty() || passengers == null}">На данный момент зарегистрированных пассажиров нет.</c:when>
+                <c:otherwise>
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead>
@@ -37,6 +40,8 @@
                         </tbody>
                     </table>
                 </div>
+            </c:otherwise>
+            </c:choose>
             </div>
         </div>
     </jsp:body>

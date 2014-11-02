@@ -34,7 +34,8 @@ public class TicketService {
     ServiceDAO serviceDAO;
     RateDAO rateDAO;
 
-    public TicketService(StationDAO stationDAO, UserDAO userDAO, TripDAO tripDAO, TicketDAO ticketDAO, RouteEntryDAO routeEntryDAO, ServiceDAO serviceDAO, RateDAO rateDAO) {
+    public TicketService(EntityManager entityManager, StationDAO stationDAO, UserDAO userDAO, TripDAO tripDAO, TicketDAO ticketDAO, RouteEntryDAO routeEntryDAO, ServiceDAO serviceDAO, RateDAO rateDAO) {
+        this.entityManager = entityManager;
         this.stationDAO = stationDAO;
         this.userDAO = userDAO;
         this.tripDAO = tripDAO;
@@ -112,9 +113,12 @@ public class TicketService {
                 LOGGER.error("Вы не можете купить билет меньше, чем за 10 минут до отправления поезда");
                 throw new TimeConstraintException("Вы не можете купить билет меньше, чем за 10 минут до отправления поезда");
             }
-        }  catch (ParseException e) {
+        }  catch (PersistenceException e) {
             LOGGER.error("Произошла ошибка при добавлении билета");
             throw new ServiceException("Произошла ошибка при добавлении билета");
+         } catch (ParseException e) {
+            LOGGER.error("Некорректный формат даты");
+            throw new ServiceException("Некорректный формат даты");
         }
         finally {
             if (entityManager.getTransaction().isActive())

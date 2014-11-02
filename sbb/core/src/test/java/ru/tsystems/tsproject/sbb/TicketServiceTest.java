@@ -9,11 +9,13 @@ import org.mockito.runners.MockitoJUnitRunner;
 import ru.tsystems.tsproject.sbb.database.dao.*;
 import ru.tsystems.tsproject.sbb.database.entity.*;
 import ru.tsystems.tsproject.sbb.services.TicketService;
+import ru.tsystems.tsproject.sbb.services.exceptions.ServiceException;
 import ru.tsystems.tsproject.sbb.services.exceptions.TimeConstraintException;
 import ru.tsystems.tsproject.sbb.services.exceptions.UserAlreadyRegisteredException;
 import ru.tsystems.tsproject.sbb.transferObjects.TicketTO;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 import javax.persistence.PersistenceException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -54,8 +56,11 @@ public class TicketServiceTest {
     @Mock
     private FactoryDAO factoryDAO;
 
+    @Mock
+    private EntityTransaction entityTransaction;
+
     @InjectMocks
-    private TicketService ticketService = new TicketService(null, null, null, null, null, null, null);
+    private TicketService ticketService = new TicketService(null, null, null, null, null, null, null, null);
 
     /**
      * Tests method TicketService.addTicket. Test passed when expected data equals to created.
@@ -65,7 +70,7 @@ public class TicketServiceTest {
     public void testAddTicket_Success() throws Exception {
         String name = "Will";
         String surname = "Smith";
-        String birthDate = "1980-08-25 00:00:00";
+        String birthDate = "1980.08.25 00:00:00";
 
         String departureDate = "29.10.2014 00:10";
         String arrivalDate = "29.10.2014 10:00";
@@ -159,7 +164,8 @@ public class TicketServiceTest {
         when(tripDAO.getTrip(tripId)).thenReturn(trip);
         when(serviceDAO.getServiceById(service1.getId())).thenReturn(service1);
         when(serviceDAO.getServiceById(service2.getId())).thenReturn(service2);
-        when(ticketDAO.getTicket(login,tripId)).thenReturn(t);
+        when(ticketDAO.getTicket(login, tripId)).thenReturn(t);
+        when(entityManager.getTransaction()).thenReturn(entityTransaction);
 
         ticketService.AddTicket(ticket);
         Ticket createdTicket = ticketDAO.getTicket(ticket.getLogin(), ticket.getTripId());
@@ -181,7 +187,7 @@ public class TicketServiceTest {
     public void testAddTicket_UserAlreadyRegisterException() throws Exception {
         String name = "Will";
         String surname = "Smith";
-        String birthDate = "1980-08-25 00:00:00";
+        String birthDate = "1980.08.25 00:00:00";
         String departureDate = "29.10.2014 00:10";
         String arrivalDate = "29.10.2014 10:00";
         String login = "will";
@@ -272,7 +278,8 @@ public class TicketServiceTest {
         when(tripDAO.getTrip(tripId)).thenReturn(trip);
         when(serviceDAO.getServiceById(service1.getId())).thenReturn(service1);
         when(serviceDAO.getServiceById(service2.getId())).thenReturn(service2);
-        when(ticketDAO.getTicket(login,tripId)).thenReturn(t);
+        when(ticketDAO.getTicket(login, tripId)).thenReturn(t);
+        when(entityManager.getTransaction()).thenReturn(entityTransaction);
 
         ticketService.AddTicket(ticket);
     }
@@ -285,7 +292,7 @@ public class TicketServiceTest {
     public void testAddTicket_TimeConstraintException() throws Exception {
         String name = "Will";
         String surname = "Smith";
-        String birthDate = "1980-08-25 00:00:00";
+        String birthDate = "1980.08.25 00:00:00";
 
         Calendar c = Calendar.getInstance();
         c.setTime(new Date());
@@ -384,7 +391,8 @@ public class TicketServiceTest {
         when(tripDAO.getTrip(tripId)).thenReturn(trip);
         when(serviceDAO.getServiceById(service1.getId())).thenReturn(service1);
         when(serviceDAO.getServiceById(service2.getId())).thenReturn(service2);
-        when(ticketDAO.getTicket(login,tripId)).thenReturn(t);
+        when(ticketDAO.getTicket(login, tripId)).thenReturn(t);
+        when(entityManager.getTransaction()).thenThrow(TimeConstraintException.class);
 
         ticketService.AddTicket(ticket);
     }
@@ -453,6 +461,7 @@ public class TicketServiceTest {
         when(serviceDAO.getValueById(service2.getId())).thenReturn(service2.getValue());
         when(rateDAO.getValueById(parameterTicket.getRateType())).thenReturn(rate1.getValue());
         when(rateDAO.getValueById(parameterTicket.getTrainRate())).thenReturn(rate2.getValue());
+        when(entityManager.getTransaction()).thenReturn(entityTransaction);
         Double price = 0.0;
         for (Long k : services.keySet())
             price += serviceDAO.getValueById(k.intValue());
@@ -465,7 +474,7 @@ public class TicketServiceTest {
      * Tests method TicketService.calcPrice. Test passed when throws PersistenceException.
      * @throws Exception
      */
-    @Test(expected = PersistenceException.class)
+    @Test(expected = ServiceException.class)
     public void testCalcPrice_NullArgument() throws Exception {
         int tripId = 2;
         Station stationFrom = new Station();
@@ -484,11 +493,11 @@ public class TicketServiceTest {
 
         RouteEntry reFrom = new RouteEntry();
         reFrom.setStation(stationFrom);
-        reFrom.setDistance(100);
+        reFrom.setDistance(0);
 
         RouteEntry reTo = new RouteEntry();
         reTo.setStation(stationTo);
-        reTo.setDistance(200);
+        reTo.setDistance(0);
 
         Rate rate1 = new Rate();
         rate1.setId(2);
@@ -498,7 +507,7 @@ public class TicketServiceTest {
         rate2.setId(1);
         rate2.setName("express");
 
-        when(routeEntryDAO.getEntry(parameterTicket.getStationFrom(), parameterTicket.getTripId())).thenReturn(reFrom);
+        when(routeEntryDAO.getEntry(parameterTicket.getStationFrom(), parameterTicket.getTripId())).thenThrow(PersistenceException.class);
         when(routeEntryDAO.getEntry(parameterTicket.getStationTo(), parameterTicket.getTripId())).thenReturn(reTo);
         double distance = reTo.getDistance() - reFrom.getDistance();
 
@@ -506,13 +515,13 @@ public class TicketServiceTest {
 
         service1.setId(1);
         service1.setName("standard package");
-        service1.setValue(250);
+        service1.setValue(0);
 
         Service service2 = new Service();
 
         service2.setId(2);
         service2.setName("business package");
-        service2.setValue(300);
+        service2.setValue(0);
 
         Map<Long,String> services = new HashMap<Long, String>();
         services.put((long) service1.getId(), service1.getName());
@@ -523,6 +532,7 @@ public class TicketServiceTest {
         when(serviceDAO.getValueById(service2.getId())).thenReturn(service2.getValue());
         when(rateDAO.getValueById(parameterTicket.getRateType())).thenReturn(rate1.getValue());
         when(rateDAO.getValueById(parameterTicket.getTrainRate())).thenReturn(rate2.getValue());
+        when(entityManager.getTransaction()).thenThrow(PersistenceException.class);
         Double price = 0.0;
         for (Long k : services.keySet())
             price += serviceDAO.getValueById(k.intValue());

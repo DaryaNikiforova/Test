@@ -48,7 +48,10 @@ public class RegisterServlet extends HttpServlet {
             if (validator.isValid()) {
                 UserService userService = new UserService(entityManager, factoryDAO);
                 userService.addUser(userTO);
-                response.sendRedirect(request.getContextPath() + "/index");
+                session = request.getSession();
+                session.setAttribute("role", userTO.getRole());
+                session.setAttribute("login", userTO.getLogin());
+                response.sendRedirect(request.getContextPath() + "/searchTrip");
             }
             else {
                 request.setAttribute("errors", validator.getErrors());

@@ -37,6 +37,14 @@ public class RouteValidatorImpl extends Validator<RouteTO> {
                 errors.put("hour"+ (i + 1), StringHelper.encode(
                         "Время в пути для станции№" + (i + 1) + " должно быть больше предыдущей"));
             }
+            if (entry.getHour() >= 1000) {
+                errors.put("hour"+ (i + 1), StringHelper.encode(
+                        "Число часов в пути для станции№" + (i + 1) + " слишком большое"));
+            }
+            if (entry.getMinute() >= 60) {
+                errors.put("minute"+ (i + 1), StringHelper.encode(
+                        "Число минут в пути для станции№" + (i + 1) + " неверное"));
+            }
             if (entry.getDistance() <= prevDistance) {
                 errors.put("distance"+ (i + 1), StringHelper.encode(
                         "Дистанция для станции№" + (i + 1) + " должна быть больше предыдущей"));
